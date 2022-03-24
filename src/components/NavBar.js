@@ -22,18 +22,6 @@ class NavBar extends React.Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item active">
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -43,20 +31,20 @@ class NavBar extends React.Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Dropdown link
+                  Categorias
                 </a>
                 <div
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <a class="dropdown-item" href="#">
-                    Action
+                    A
                   </a>
                   <a class="dropdown-item" href="#">
-                    Another action
+                    B
                   </a>
                   <a class="dropdown-item" href="#">
-                    Something else here
+                    C
                   </a>
                 </div>
               </li>
