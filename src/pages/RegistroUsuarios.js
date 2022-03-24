@@ -53,6 +53,9 @@ class RegistroUsuarios extends React.Component {
                     <a class="dropdown-item">C</a>
                   </div>
                 </div>
+                <button type="button" value="Submit" class="btn btn-dark">
+                  Registrar
+                </button>
               </div>
               <div class="col">
                 <form>
@@ -71,9 +74,6 @@ class RegistroUsuarios extends React.Component {
                 </form>
               </div>
             </div>
-              <button type="button" value="Submit" class="btn btn-dark">
-                Registrar
-              </button>
           </div>
         </form>
       </div>

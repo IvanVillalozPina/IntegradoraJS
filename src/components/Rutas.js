@@ -11,7 +11,7 @@ import MenuProductos from '../pages/MenuProductos'
 import RegistroUsuarios from '../pages/RegistroUsuarios'
 import ConsultaProductos from '../pages/ConsultaProductos'
 import RegistroClientes from '../pages/RegistroClientes'
-
+import AltaProductos from '../pages/AltaProductos'
 
 
 function Rutas(){
@@ -24,7 +24,7 @@ function Rutas(){
             <Route exact path="/RegistroUsuarios" component={RegistroUsuarios}/>
             <Route exact path="/ConsultaProductos" component={ConsultaProductos}/>
             <Route exact path="/RegistroClientes" component={RegistroClientes}/>
-            
+            <Route exact path="/AltaProductos" component={AltaProductos}/>
             <Route component={NoExiste}/>
             </Switch>    
       </BrowserRouter>
