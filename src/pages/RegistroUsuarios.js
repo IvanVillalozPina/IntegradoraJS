@@ -71,11 +71,9 @@ class RegistroUsuarios extends React.Component {
                 </form>
               </div>
             </div>
-            <div class="row">
               <button type="button" value="Submit" class="btn btn-dark">
                 Registrar
               </button>
-            </div>
           </div>
         </form>
       </div>

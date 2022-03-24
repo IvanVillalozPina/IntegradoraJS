@@ -52,6 +52,9 @@ class NavBar extends React.Component {
             <a href="/InicioSesion" class="btn btn-outline-light my-2 my-sm-0">
               Iniciar Sesión
             </a>
+            <a href="/RegistroUsuarios" class="btn btn-outline-light my-2 my-sm-0">
+              Registrate
+            </a>
           </div>
         </nav>
       </div>
