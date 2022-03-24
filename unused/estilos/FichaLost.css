@@ -1,0 +1,69 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.fotoLOST{
+	text-align: center;
+	margin-top: 15px;
+	
+}
+
+.fotoLOST2{
+	height: 262px;
+	width: 200px;
+	border: 5px outset goldenrod;
+}
+
+.card1LOST{
+	margin-top: 100px;
+	background-color: rgb(216, 216, 216);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.card2LOST{
+	margin: 5%;
+	background-color: black;
+	border: 5px outset darkgray;  
+	color: white;  
+	text-align: center;  
+
+}
+
+.texto1LOST{
+	margin: auto;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.texto2LOST{
+	margin: auto;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.botonLOST{
+	margin: auto;
+	margin-top: 10px;
+}
+
+.dropLOST{
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

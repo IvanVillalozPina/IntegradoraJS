@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+.InicioSesionTexto{
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 80px;
+}
+
+.LineShape{
+    width: 500px;
+    height: 20px;
+    background: orangered;
+    position: absolute;
+    left: 500px; 
+    top: 220px;
+}
+
+.JumbotronInicio {
+  background-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+  color: orangered;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.CasaMonteroDiv{
+    text-align: right;
+}
+
+.CasaMonteroImg{
+    width: 100px; /*Horizontal*/
+    height: 100px; /*Vertical*/
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+
+.IniciarSesion{
+    text-align:left ;
+    padding-left: 33%;
+    padding-right: 33%;
+}
+
+.InicarSesionBoton{
+    text-align: center;
+}

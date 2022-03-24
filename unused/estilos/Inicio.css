@@ -1,0 +1,21 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.botonesInicio{
+    margin-top: 50px;  
+    text-align: center;
+   
+}
+
+.jumbotronInicio{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+	border: 5px outset darkgray;      
+    padding-bottom: 40px;
+    padding-top: 20px;
+    
+}

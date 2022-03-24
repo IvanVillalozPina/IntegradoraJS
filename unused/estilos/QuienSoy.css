@@ -1,0 +1,35 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.jumbotronQuien{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+	border: 5px outset darkgray;      
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.imagenQuienSoy{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.textosQuienSoyIzquierda{
+    text-align: justify;
+    padding-left: 150px;
+   
+}
+
+.textosQuienSoyDerecha{
+    text-align: justify;
+    padding-left: 180px;
+}
+
+.textosQuienSoyMedio{
+  padding-bottom: 20px;
+}

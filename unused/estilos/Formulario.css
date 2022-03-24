@@ -1,0 +1,22 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.jumbotronFormulario{
+    text-align: center;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    text-align: center;
+	border: 5px outset darkgray;      
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.margenesFormulario{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+

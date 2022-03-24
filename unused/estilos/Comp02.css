@@ -1,0 +1,79 @@
+.cuerpo{
+    background-color: rgb(56, 55, 55);
+    margin-top: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.transparente{
+    position: absolute;
+    margin-top: 20;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    background-color: rgba(52, 52, 52, 0.8);
+}
+
+.relacionados{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ImgPrimerColumna{
+    border-radius: 100%;
+    margin-left: 25%;
+    margin-top: 30px;
+    width: 100px;
+   height: 100px;
+   box-shadow: 4px 4px 4px 2px rgb(175, 175, 175);
+}
+
+.ImgVladimir{
+    border-radius: 100%;
+    margin-left: 43.5%;
+    margin-top: 0px;
+    width: 100px;
+   height: 100px;
+}
+
+.TextVladimir{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: crimson;
+}
+
+.vladback{
+    background-image: url(https://cdn.bhdw.net/im/blood-lord-vladimir-league-of-legends-lol-papel-pintado-73217_w635.jpg);
+    
+}
+
+.botonmedio{
+   padding-left: 43.5%;
+}
+
+
+.UltimaCard{
+    background-color: black;
+}
+
+.Imgnoxus{
+   
+    margin-left: 25%;
+    width: 100px;
+    height: 100px;
+}
+
+.cajastexto{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.botondescargar{
+    margin-top: 20px;
+    margin-left: 27%;
+}
