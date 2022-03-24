@@ -13,19 +13,19 @@ class MenuProductos extends React.Component {
           imagen: "./fotos/DesCruz.jpg",
           nombre: "Desarmador",
           descripcion: "Desarmador de cruz",
-          boton: "btn btn-primary",
+          boton: "btn btn-dark",
         },
         {
           imagen: "./fotos/DesCruz.jpg",
           nombre: "Desarmador",
           descripcion: "Desarmador de cruz",
-          boton: "btn btn-primary",
+          boton: "btn btn-dark",
         },
         {
           imagen: "./fotos/DesCruz.jpg",
           nombre: "Desarmador",
           descripcion: "Desarmador de cruz",
-          boton: "btn btn-primary",
+          boton: "btn btn-dark",
         },
       ],
     };

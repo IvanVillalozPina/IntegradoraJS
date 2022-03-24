@@ -17,8 +17,8 @@ function Rutas(){
     
       <BrowserRouter> 
             <Switch>     
-            <Route exact path="/" component={InicioSesion}/> 
-            <Route exact path="/MenuProductos" component={MenuProductos}/>
+            <Route exact path="/" component={MenuProductos}/>
+            <Route exact path="/InicioSesion" component={InicioSesion}/> 
             <Route exact path="/RegistroUsuarios" component={RegistroUsuarios}/>
             <Route component={NoExiste}/>
             </Switch>    
