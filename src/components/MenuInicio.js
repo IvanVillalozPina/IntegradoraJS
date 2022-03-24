@@ -5,15 +5,15 @@ import "./styles/MenuInicio.css";
 class MenuInicio extends React.Component {
   render() {
     const { imagen, nombre, descripcion, boton } = this.props;
-    return (
-      <div>
+    return (   
+      <div className="CentrarItems">
         <div className="card">
           <div className="row">
-            <div className="col-sm-3">
+            <div className="col">
               <div className="card">
                 <div className="card-body">
                   <div>
-                    <img src={imagen} alt="imagen" />
+                    <img className="TamanoImagen" src={imagen} alt="imagen" />
                   </div>
                   <div>
                     <div>{nombre} </div>

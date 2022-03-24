@@ -1,0 +1,11 @@
+.ProductosTexto{
+    text-align: center;
+    font-size: 150px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 10px 2px darkgray;
+}
+
+.colormy4{
+    background-color: rgb(253, 91, 32);
+}

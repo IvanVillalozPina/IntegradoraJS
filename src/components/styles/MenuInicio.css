@@ -1,6 +1,17 @@
-* {
-    margin: 0px;
-    padding: 0px;
-   /*  background-color: rgb(64, 32, 1);*/
-   
-  }
+.TamanoImagen{
+    width: 300px;
+    height: 300px;
+}
+.CentrarItems{
+    text-align: center;
+    display: inline-flex;
+    padding-left: 110px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.Tarjeta{
+    border-radius: 20px;
+    border-color: black;
+    background-color: black;
+}
+

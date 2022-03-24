@@ -1,4 +1,6 @@
 import React from "react";
+import './styles/NavBar.css'
+import CasaMontero from "../pictures/CasaMontero.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class NavBar extends React.Component {
@@ -7,7 +9,11 @@ class NavBar extends React.Component {
       <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="/">
-            Inicio
+            <div className="InicioNavBar">
+              <div>
+              <img className="ImagenMontero" src={CasaMontero} />
+              </div>
+            </div>
           </a>
           <button
             class="navbar-toggler"
@@ -33,7 +39,7 @@ class NavBar extends React.Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Categorias
+                 Categorias
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">
@@ -49,9 +55,11 @@ class NavBar extends React.Component {
                 </div>
               </li>
             </ul>
+            <div className="BotonIniciarSesion">
             <a href="/InicioSesion" class="btn btn-outline-light my-2 my-sm-0">
               Iniciar Sesión
             </a>
+            </div>
             <a href="/RegistroClientes" class="btn btn-outline-light my-2 my-sm-0">
               Registrate
             </a>

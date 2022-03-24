@@ -1,7 +1,6 @@
 * {
   margin: 0px;
   padding: 0px;
- 
 }
 
 .InicioSesionTexto{
@@ -36,6 +35,8 @@
     height: 100px; /*Vertical*/
     margin-right: 50px;
     border-radius: 10px;
+    border: 1px outset orangered;
+    box-shadow: 3px 3px 1px 1px orangered;
 }
 
 
