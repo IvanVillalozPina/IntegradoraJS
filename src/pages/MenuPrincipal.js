@@ -1,11 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/js/dist/modal';
 import "../components/styles/MenuProductos.css";
 import MenuLista from "../components/MenuLista";
 import NavBar from "../components/NavBar";
 import Carrusel from "../components/Carrusel";
 
-class MenuProductos extends React.Component {
+class MenuPrincipal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,14 +43,13 @@ class MenuProductos extends React.Component {
         </div>
         <div className="ProductosTexto">Productos</div>
         <div className="colormy4">
-        <hr class="my-4" />
+          <hr class="my-4" />
         </div>
-        
         <div>
-        <MenuLista productos={this.state.datos} />
-      </div>
+          <MenuLista productos={this.state.datos} />
+        </div>
       </div>
     );
   }
 }
-export default MenuProductos;
+export default MenuPrincipal;

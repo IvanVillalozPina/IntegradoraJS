@@ -1,11 +1,14 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import './styles/NavBar.css'
 import CasaMontero from "../pictures/CasaMontero.jpg";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 class NavBar extends React.Component {
   render() {
     return (
+      
       <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <a class="navbar-brand" href="/">
