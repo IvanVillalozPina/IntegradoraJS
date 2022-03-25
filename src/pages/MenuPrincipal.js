@@ -48,6 +48,7 @@ class MenuPrincipal extends React.Component {
         <div>
           <MenuLista productos={this.state.datos} />
         </div>
+
       </div>
     );
   }

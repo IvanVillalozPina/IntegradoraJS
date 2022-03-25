@@ -1,10 +1,11 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 import 'bootstrap/js/dist/modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 import ReactDOM from 'react-dom';
 
-
- 
 import Rutas from './components/Rutas';
 
 
