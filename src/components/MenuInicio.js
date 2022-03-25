@@ -10,7 +10,7 @@ class MenuInicio extends React.Component {
       <div className="CentrarItems">
         <div className="card">
           <div className="row">
-            <div className="col">
+            <div className="col-sm col-md col-lg col-xl">
               <div className="card">
                 <div className="card-body">
                   <div>
@@ -31,6 +31,7 @@ class MenuInicio extends React.Component {
           </div>
         </div>
       </div>
+  
     );
   }
 }
