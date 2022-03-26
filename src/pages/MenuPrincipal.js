@@ -12,22 +12,22 @@ class MenuPrincipal extends React.Component {
     this.state = {
       datos: [
         {
-          imagen: "./fotos/DesCruz.jpg",
-          nombre: "Desarmador",
-          descripcion: "Desarmador de cruz",
-          boton: "btn btn-dark",
+          image: "./fotos/DesCruz.jpg",
+          name: "Desarmador",
+          description: "Desarmador de cruz...",
+          
         },
         {
-          imagen: "./fotos/DesCruz.jpg",
-          nombre: "Desarmador",
-          descripcion: "Desarmador de cruz",
-          boton: "btn btn-dark",
+          image: "./fotos/Cable.jpg",
+          name: "Cable 12mm",
+          description: "Cable...",
+          
         },
         {
-          imagen: "./fotos/DesCruz.jpg",
-          nombre: "Desarmador",
-          descripcion: "Desarmador de cruz",
-          boton: "btn btn-dark",
+          image: "./fotos/TijerJar.jpg",
+          name: "Tijeras de Jardineria",
+          description: "Tijeras para jardineria...",
+          
         },
       ],
     };
@@ -48,7 +48,6 @@ class MenuPrincipal extends React.Component {
         <div>
           <MenuLista productos={this.state.datos} />
         </div>
-
       </div>
     );
   }

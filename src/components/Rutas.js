@@ -21,9 +21,10 @@ function Rutas(){
             <Switch>     
             <Route exact path="/" component={MenuPrincipal}/>
             <Route exact path="/InicioSesion" component={InicioSesion}/> 
+            <Route exact path="/RegistroClientes" component={RegistroClientes}/>
+
             <Route exact path="/RegistroUsuarios" component={RegistroUsuarios}/>
             <Route exact path="/ConsultaProductos" component={ConsultaProductos}/>
-            <Route exact path="/RegistroClientes" component={RegistroClientes}/>
             <Route exact path="/AltaProductos" component={AltaProductos}/>
             <Route component={NoExiste}/>
             </Switch>    

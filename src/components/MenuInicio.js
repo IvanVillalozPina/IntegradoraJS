@@ -5,23 +5,23 @@ import "./styles/MenuInicio.css";
 
 class MenuInicio extends React.Component {
   render() {
-    const { imagen, nombre, descripcion, boton } = this.props;
+    const { name, byname, description, image, id_category } = this.props;
     return (   
-      <div className="CentrarItems">
+      <div className="CentrarItems col-sm col-md col-lg col-xl">
         <div className="card">
           <div className="row">
             <div className="col-sm col-md col-lg col-xl">
               <div className="card">
                 <div className="card-body">
                   <div>
-                    <img className="TamanoImagen" src={imagen} alt="imagen" />
+                    <img className="TamanoImagen" src={image} alt="imagen" />
                   </div>
                   <div>
-                    <div>{nombre} </div>
-                    <div>{descripcion} </div>
+                    <div>{name} </div>
+                    <p>{description} </p>
                   </div>
                   <div>
-                    <div type="button" class={boton}>
+                    <div type="button" class="btn btn-dark">
                       Más información
                     </div>
                   </div>

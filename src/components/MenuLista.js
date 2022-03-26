@@ -10,10 +10,9 @@ function MenuLista(props) {
             {props.productos.map((reporte) => {
                 return (
                     <MenuInicio
-                    imagen={reporte.imagen}
-                    nombre={reporte.nombre}
-                    descripcion={reporte.descripcion}
-                    boton={reporte.boton}
+                    image={reporte.image}
+                    name={reporte.name}
+                    description={reporte.description}
                     />
                 )
             })}
