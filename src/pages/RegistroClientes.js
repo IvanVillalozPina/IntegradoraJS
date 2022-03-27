@@ -5,10 +5,8 @@ class RegistroClientes extends React.Component {
   render() {
     return (
       <div>
-        
         <nav class="navbar navbar-dark bg-dark center">
           <div className="NavForms">Registro Clientes</div>
-          <div className="triangulo" />
         </nav>
         <div className="Posicion1">
           <div className="Posicion2">
@@ -101,15 +99,19 @@ class RegistroClientes extends React.Component {
                               class="form-control-file"
                               id="exampleFormControlFile1"
                             />
+                            <div className="BotonForms1">
+                              <button
+                                type="button"
+                                value="Submit"
+                                class="btn btn-dark btn-lg btn-block"
+                              >
+                                Registrar
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="BotonForms1">
-                    <button type="button" value="Submit" class="btn btn-dark">
-                      Registrar
-                    </button>
                   </div>
                 </div>
               </div>
