@@ -1,21 +1,24 @@
 * {
   margin: 0px;
   padding: 0px;
+  
 }
 
-.InicioSesionTexto{
+.InicioSesionTexto {
   color: black;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 80px;
+  text-shadow: -4px 4px 2px darkgray;
 }
 
-.LineShape{
-    width: 500px;
-    height: 20px;
-    background: orangered;
-    position: absolute;
-    left: 500px; 
-    top: 220px;
+.LineShape {
+  width: 500px;
+  height: 20px;
+  background: orangered;
+  position: absolute;
+  left: 499px;
+  top: 220px;
+  border: 5px outset orangered;
 }
 
 .JumbotronInicio {
@@ -25,27 +28,32 @@
   text-align: center;
   padding-bottom: 40px;
   padding-top: 20px;
+ 
 }
-.CasaMonteroDiv{
-    text-align: right;
-}
-
-.CasaMonteroImg{
-    width: 100px; /*Horizontal*/
-    height: 100px; /*Vertical*/
-    margin-right: 50px;
-    border-radius: 10px;
-    border: 1px outset orangered;
-    box-shadow: 3px 3px 1px 1px orangered;
+.CasaMonteroDiv {
+  text-align: right;
 }
 
-
-.IniciarSesion{
-    text-align:left ;
-    padding-left: 33%;
-    padding-right: 33%;
+.CasaMonteroImg {
+  width: 100px; /*Horizontal*/
+  height: 100px; /*Vertical*/
+  margin-right: 50px;
+  border-radius: 10px;
+  border: 1px outset orangered;
+  box-shadow: 3px 3px 1px 1px orangered;
 }
 
-.InicarSesionBoton{
-    text-align: center;
+.IniciarSesion {
+  text-align: left;
+  padding-left: 33%;
+  padding-right: 33%;
+}
+
+.InicarSesionBoton {
+  text-align: center;
+}
+
+.My4InicioSesion {
+  color: orangered;
+  
 }

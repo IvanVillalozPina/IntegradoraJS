@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/js/dist/modal';
-import "../components/styles/MenuProductos.css";
+import "../components/styles/MenuPrincipal.css";
 import MenuLista from "../components/MenuLista";
 import NavBar from "../components/NavBar";
 import Carrusel from "../components/Carrusel";
@@ -15,19 +15,31 @@ class MenuPrincipal extends React.Component {
           image: "./fotos/DesCruz.jpg",
           name: "Desarmador",
           description: "Desarmador de cruz...",
-          
+          price: "$100"
         },
         {
           image: "./fotos/Cable.jpg",
           name: "Cable 12mm",
           description: "Cable...",
-          
+          price: "$50"
         },
         {
           image: "./fotos/TijerJar.jpg",
           name: "Tijeras de Jardineria",
           description: "Tijeras para jardineria...",
-          
+          price: "$200"
+        },
+        {
+          image: "./fotos/TijerJar.jpg",
+          name: "Tijeras de Jardineria",
+          description: "Tijeras para jardineria...",
+          price: "$200"
+        },
+        {
+          image: "./fotos/TijerJar.jpg",
+          name: "Tijeras de Jardineria",
+          description: "Tijeras para jardineria...",
+          price: "$200"
         },
       ],
     };

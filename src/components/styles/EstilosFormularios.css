@@ -1,0 +1,45 @@
+.NavForms {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 630px;
+  color: whitesmoke;  
+}
+.Posicion1 {
+  position: relative;  
+}
+.Posicion2 {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+.Posicion3 {
+  border: 5px outset whitesmoke;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.MargenesTextsForms1{
+    margin-top: 15px;
+    
+}
+.MargenesTextsForms2{
+    margin-bottom: 5px;
+}
+.MargenesImgForms1{
+  margin-top: 10px;
+  text-align: center;
+}
+.MargenesImgForms2{
+  margin-bottom: 5px;
+}
+.BotonForms1{
+
+    text-align: center;
+    margin-top: 30px;
+}

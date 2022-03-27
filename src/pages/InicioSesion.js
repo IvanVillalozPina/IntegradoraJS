@@ -17,7 +17,10 @@ class InicioSesion extends React.Component {
           </div>
           <div className="InicioSesionTexto">Iniciar Sesión</div>
           <div className="LineShape"></div>
+          <div className="My4InicioSesion">
           <hr class="my-4" />
+          </div>
+          
           <div className="IniciarSesion">
             <form>
               <div class="form-group">

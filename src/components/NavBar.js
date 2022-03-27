@@ -16,24 +16,23 @@ class NavBar extends React.Component {
               </div>
             </div>
           </a>
-          <button
+        <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-target="#navbarContent"
+            aria-controls="navbarContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="/InicioSesion"
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
@@ -55,7 +54,6 @@ class NavBar extends React.Component {
                 </div>
               </li>
             </ul>
-            <div>
               <div className="BotonIniciarSesion" >
                 <a
                   href="/InicioSesion"
@@ -64,7 +62,6 @@ class NavBar extends React.Component {
                   <i class="bi bi-person-circle" /> Iniciar Sesión
                 </a>
               </div>
-            </div>
             <div>
               <a
                 href="/RegistroClientes"
