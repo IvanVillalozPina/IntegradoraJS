@@ -6,7 +6,7 @@ class RegistroClientes extends React.Component {
     return (
       <div>
         <nav class="navbar navbar-dark bg-dark center">
-          <div className="NavForms">Registro Clientes</div>
+          <div className="NavForms">Registro de clientes</div>
         </nav>
         <div className="Posicion1">
           <div className="Posicion2">

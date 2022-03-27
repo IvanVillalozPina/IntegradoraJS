@@ -7,7 +7,7 @@ class RegistroUsuarios extends React.Component {
     return (
       <div>
         <nav class="navbar navbar-dark bg-dark center">
-          <div className="NavForms">Registro Usuarios</div>
+          <div className="NavForms">Registro de usuarios</div>
         </nav>
         <div className="Posicion1">
           <div className="Posicion2">
