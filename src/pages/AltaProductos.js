@@ -5,91 +5,79 @@ class AltaProductos extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-dark bg-dark">
-          <span class="navbar-brand mb-0 h1">Alta de Productos</span>
+        <nav class="navbar navbar-dark bg-dark center">
+          <div className="NavForms">Alta de productos</div>
         </nav>
-        <form>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                Nombre{" "}
-                <input
-                  class="form-control form-control-lg"
-                  type="text"
-                  name="nombre"
-                  placeholder="Nombre del producto"
-                />
-                Descripción{" "}
-                <input
-                  class="form-control form-control-lg"
-                  type="text-box"
-                  name="descripcion"
-                  placeholder="Descripción"
-                />
-                Precio{" "}
-                <input
-                  class="form-control form-control-lg"
-                  type="number"
-                  name="numeroTel"
-                  placeholder="Precio del producto"
-                />
-                Referencia{" "}
-                <input
-                  class="form-control form-control-lg"
-                  type="text-box"
-                  name="referencia"
-                  placeholder="Referencia"
-                />
-                <fieldset disabled>
-                  <label for="disabledTextInput"></label>
-                  <input
-                    class="form-control form-control-lg"
-                    type="text-box"
-                    name="referencia"
-                    placeholder="Stock"
-                  />
-                </fieldset>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="exampleRadios"
-                    id="exampleRadios1"
-                    value="option1"
-                  />
-                  <label class="form-check-label" for="exampleRadios1">
-                    Si
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="exampleRadios"
-                    id="exampleRadios2"
-                    value="option2"
-                  />
-                  <label class="form-check-label" for="exampleRadios2">
-                    No
-                  </label>
-                </div>
-                <button type="button" value="Submit" class="btn btn-dark">
-                  Registrar
-                </button>
-              </div>
-              <div class="col">
-                <form>
-                  <div class="form-group">
-                    <label for="exampleFormControlFile1">
-                      Imagen del productoㅤ
-                    </label>
-                    <div class="row">
+        <div className="Posicion1">
+          <div className="Posicion2">
+            <form className="Posicion3">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div className="MargenesTextsForms2">Nombre</div>
+                    <input
+                      class="form-control form-control-lg"
+                      type="text"
+                      name="nombre"
+                      placeholder="Nombre del producto"
+                    />
+                    <div className="MargenesTextsForms1">
+                      <div className="MargenesTextsForms2">Descripción</div>
                       <input
-                        type="file"
-                        class="form-control-file"
-                        id="exampleFormControlFile1"
+                        class="form-control form-control-lg"
+                        type="text-box"
+                        name="descripcion"
+                        placeholder="Descripción"
                       />
                     </div>
+                    <div className="MargenesTextsForms1">
+                      <div className="MargenesTextsForms2"> Precio</div>
+                      <input
+                        class="form-control form-control-lg"
+                        type="number"
+                        name="numeroTel"
+                        placeholder="Precio del producto"
+                      />
+                    </div>
+                    <div className="MargenesTextsForms1">
+                      <div className="MargenesTextsForms2">Referencia</div>
+                      <input
+                        class="form-control form-control-lg"
+                        type="text-box"
+                        name="referencia"
+                        placeholder="Referencia"
+                      />
+                    </div>
+
+                    <div className="MargenesTextsForms1">
+                      <div className="MargenesTextsForms2">Stock</div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios1"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="exampleRadios1">
+                          Si
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="exampleRadios2">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="MargenesTextsForms1">
                     <div class="dropdown">
                       <button
                         class="btn btn-secondary dropdown-toggle"
@@ -117,11 +105,38 @@ class AltaProductos extends React.Component {
                       </div>
                     </div>
                   </div>
-                </form>
+                  <div className="MargenesImgForms1">
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">
+                        <div className="MargenesImgForms2">
+                          Imagen del producto
+                        </div>
+                      </label>
+                      <div>
+                        <input
+                          type="file"
+                          class="form-control-file"
+                          id="exampleFormControlFile1"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="BotonForms1">
+                        <button
+                          type="button"
+                          value="Submit"
+                          class="btn btn-dark btn-lg btn-block"
+                        >
+                          Registrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     );
   }

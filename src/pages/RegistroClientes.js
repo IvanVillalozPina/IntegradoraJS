@@ -48,8 +48,9 @@ class RegistroClientes extends React.Component {
                         placeholder="Contraseña"
                       />
                     </div>
-
+                 
                     <div className="MargenesTextsForms1">
+                      <div className="MargenesTextsForms2">Sexo</div>
                       <div class="form-check">
                         <input
                           class="form-check-input"
