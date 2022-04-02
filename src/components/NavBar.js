@@ -8,16 +8,16 @@ class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="/">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a className="navbar-brand" href="/">
             <div className="InicioNavBar">
               <div>
-                <img className="ImagenMontero" src={CasaMontero} />
+                <img className="ImagenMontero" src={CasaMontero} alt='Casa Montero Logo' />
               </div>
             </div>
           </a>
-        <button
-            class="navbar-toggler"
+          <button
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarContent"
@@ -25,49 +25,34 @@ class NavBar extends React.Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/InicioSesion"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Categorias
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/">
-                    A
-                  </a>
-                  <a class="dropdown-item" href="/">
-                    B
-                  </a>
-                  <a class="dropdown-item" href="/">
-                    C
-                  </a>
-                </div>
-              </li>
-            </ul>
-              <div className="BotonIniciarSesion" >
-                <a
-                  href="/InicioSesion"
-                  class="btn btn-outline-light my-2 my-sm-0"
-                >
-                  <i class="bi bi-person-circle" /> Iniciar Sesión
-                </a>
-              </div>
+          <div className="collapse navbar-collapse" id="navbarContent">
+            <div className="SelectInSs">
+              <select
+                className="form-select form-select-sm form-select"
+                aria-label=".form-select-sm example"
+              >
+                <option selected>Categorias</option>
+                <option value="1">T</option>
+                <option value="2">K</option>
+                <option value="3">Z</option>
+              </select>
+            </div>
+            <div className="BotonIniciarSesion">
+              <a
+                href="/InicioSesion"
+                className="btn btn-outline-light my-2 my-sm-0"
+              >
+                <i className="bi bi-person-circle" /> Iniciar Sesión
+              </a>
+            </div>
             <div>
               <a
                 href="/RegistroClientes"
-                class="btn btn-outline-light my-2 my-sm-0"
+                className="btn btn-outline-light my-2 my-sm-0"
               >
-                <i class="bi bi-plus-circle" /> Registrate
+                <i className="bi bi-plus-circle" /> Registrate
               </a>
             </div>
           </div>

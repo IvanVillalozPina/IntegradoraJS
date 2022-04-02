@@ -9,9 +9,14 @@
    margin-right: 25px;   
 }
 
+.SelectInSs{
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+}
+
 .BotonIniciarSesion{
   
-    margin-left: 900px;
+    margin-left: 700px;
     margin-right: 50px;
    
 }

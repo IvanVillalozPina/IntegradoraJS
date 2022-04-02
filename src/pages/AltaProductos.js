@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import '../components/styles/EstilosFormularios.css'
 
 class AltaProductos extends React.Component {
   render() {
@@ -18,7 +19,7 @@ class AltaProductos extends React.Component {
                     <input
                       class="form-control form-control-lg"
                       type="text"
-                      name="nombre"
+                      name="name"
                       placeholder="Nombre del producto"
                     />
                     <div className="MargenesTextsForms1">
@@ -26,109 +27,101 @@ class AltaProductos extends React.Component {
                       <input
                         class="form-control form-control-lg"
                         type="text-box"
-                        name="descripcion"
+                        name="description"
                         placeholder="Descripción"
                       />
                     </div>
                     <div className="MargenesTextsForms1">
-                      <div className="MargenesTextsForms2"> Precio</div>
+                      <div className="MargenesTextsForms2">Precio</div>
                       <input
                         class="form-control form-control-lg"
                         type="number"
-                        name="numeroTel"
+                        name="price"
                         placeholder="Precio del producto"
                       />
-                    </div>
-                    <div className="MargenesTextsForms1">
-                      <div className="MargenesTextsForms2">Referencia</div>
-                      <input
-                        class="form-control form-control-lg"
-                        type="text-box"
-                        name="referencia"
-                        placeholder="Referencia"
-                      />
-                    </div>
+                      <div className="MargenesTextsForms1">
+                        <div className="MargenesTextsForms2">Cantidad</div>
+                        <input
+                          class="form-control form-control-lg"
+                          type="number"
+                          name="quantity"
+                          placeholder="Precio del producto"
+                        />
+                      </div>
+                      <div className="MargenesTextsForms1">
+                        <div className="MargenesTextsForms2">Referencia</div>
+                        <input
+                          class="form-control form-control-lg"
+                          type="text-box"
+                          name="reference"
+                          placeholder="Referencia"
+                        />
+                      </div>
 
-                    <div className="MargenesTextsForms1">
-                      <div className="MargenesTextsForms2">Stock</div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios1"
-                          value="option1"
-                        />
-                        <label class="form-check-label" for="exampleRadios1">
-                          Si
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios2"
-                          value="option2"
-                        />
-                        <label class="form-check-label" for="exampleRadios2">
-                          No
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="MargenesTextsForms1">
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        id="dropdownMenuButton"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Categoria
-                      </button>
-                      <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton"
-                      >
-                        <a class="dropdown-item" href="#">
-                          A
-                        </a>
-                        <a class="dropdown-item" href="#">
-                          B
-                        </a>
-                        <a class="dropdown-item" href="#">
-                          C
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="MargenesImgForms1">
-                    <div class="form-group">
-                      <label for="exampleFormControlFile1">
-                        <div className="MargenesImgForms2">
-                          Imagen del producto
+                      <div className="MargenesTextsForms1">
+                        <div className="MargenesTextsForms2">Stock</div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="stock"
+                            id="yes"
+                          />
+                          <label class="form-check-label" for="yes">
+                            Si
+                          </label>
                         </div>
-                      </label>
-                      <div>
-                        <input
-                          type="file"
-                          class="form-control-file"
-                          id="exampleFormControlFile1"
-                        />
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="stock"
+                            id="no"
+                            checked
+                          />
+                          <label class="form-check-label" for="no">
+                            No
+                          </label>
+                        </div>
                       </div>
                     </div>
-                    <div>
-                      <div className="BotonForms1">
-                        <button
-                          type="button"
-                          value="Submit"
-                          class="btn btn-dark btn-lg btn-block"
-                        >
-                          Registrar
-                        </button>
+                    <div className="SelectForms">
+                      <select
+                        className="form-select form-select-sm form-select"
+                        aria-label=".form-select-sm example"
+                      >
+                        <option selected name="id_category">Categorias</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                      </select>
+                    </div>
+                    <div className="MargenesImgForms1">
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">
+                          <div className="MargenesImgForms2">
+                            Imagen del producto
+                          </div>
+                        </label>
+                        <div>
+                          <input
+                            type="file"
+                            class="form-control-file"
+                            id="exampleFormControlFile1"
+                            name="image"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="BotonForms1">
+                          <button
+                            type="button"
+                            value="Submit"
+                            class="btn btn-dark btn-lg btn-block"
+                          >
+                            Registrar
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

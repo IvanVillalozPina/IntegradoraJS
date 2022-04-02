@@ -19,14 +19,14 @@ class RegistroUsuarios extends React.Component {
                     <input
                       class="form-control form-control-lg"
                       type="text"
-                      name="nombre"
+                      name="name"
                       placeholder="Nombre completo"
                     />
                     <div className="MargenesTextsForms1">
                       <div className="MargenesTextsForms2">Correo</div>
                       <input
                         class="form-control form-control-lg"
-                        type="text"
+                        type="email"
                         name="email"
                         placeholder="Correo Electronico"
                       />
@@ -36,32 +36,21 @@ class RegistroUsuarios extends React.Component {
                       <input
                         class="form-control form-control-lg"
                         type="password"
-                        name="contrasena"
+                        name="password"
                         placeholder="Contraseña"
                       />
                     </div>
-                    <div className="MargenesTextsForms1">
-                      <div class="dropdown">
-                        <button
-                          class="btn btn-secondary dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          Rol
-                        </button>
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton"
-                        >
-                          <a class="dropdown-item">A</a>
-                          <a class="dropdown-item">B</a>
-                          <a class="dropdown-item">C</a>
-                        </div>
-                      </div>
-                    </div>
+                  <div className="SelectForms">
+                    <select
+                      className="form-select form-select-sm form-select"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected name="id_role">Rol</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                    </select>
+                  </div>
                   </div>
                 </div>
                 <div className="MargenesImgForms1">
@@ -74,12 +63,13 @@ class RegistroUsuarios extends React.Component {
                         type="file"
                         class="form-control-file"
                         id="exampleFormControlFile1"
+                        name="image"
                       />
                       <div className="BotonForms1">
                         <button
                           type="button"
                           value="Submit"
-                          class="btn btn-dark btn-lg btn-block"
+                          className="btn btn-dark btn-lg btn-block"
                         >
                           Registrar
                         </button>

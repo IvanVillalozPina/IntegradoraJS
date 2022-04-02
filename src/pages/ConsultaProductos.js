@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import '../components/styles/EstilosFormularios.css'
 class ConsultaProductos extends React.Component {
   render() {
     return (
@@ -18,42 +18,26 @@ class ConsultaProductos extends React.Component {
                     <input
                       class="form-control form-control-lg"
                       type="text"
-                      name="nombre"
+                      name="name"
                       placeholder="Nombre del articulo"
                     />
                   </div>
-                  <div className="MargenesTextsForms1">
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        id="dropdownMenuButton"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
-                        Categoria
-                      </button>
-                      <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton"
-                      >
-                        <a class="dropdown-item" href="#">
-                          A
-                        </a>
-                        <a class="dropdown-item" href="#">
-                          B
-                        </a>
-                        <a class="dropdown-item" href="#">
-                          C
-                        </a>
-                      </div>
-                    </div>
-                    <div className="BotonForms1">
-                      <button type="button" value="Submit" class="btn btn-dark">
-                        Registrar
-                      </button>
-                    </div>
+                  <div/>
+                  <div className="SelectForms">
+                    <select
+                      className="form-select form-select-sm form-select"
+                      aria-label=".form-select-sm example"
+                    >
+                      <option selected name="id_category">Categorias</option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                    </select>
+                  </div>
+                  <div className="BotonForms1">
+                    <button type="button" value="Submit" class="btn btn-dark">
+                      Registrar
+                    </button>
                   </div>
                 </div>
               </div>

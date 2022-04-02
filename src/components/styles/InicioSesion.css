@@ -12,13 +12,16 @@
 }
 
 .LineShape {
+
   width: 500px;
   height: 20px;
   background: orangered;
-  position: absolute;
-  left: 499px;
-  top: 220px;
   border: 5px outset orangered;
+  position: absolute;
+  top: 450px;
+  left: 58%;
+
+  margin: -15% 0 0 -25%;
 }
 
 .JumbotronInicio {

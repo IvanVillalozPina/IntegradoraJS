@@ -16,9 +16,12 @@ class InicioSesion extends React.Component {
             />
           </div>
           <div className="InicioSesionTexto">Iniciar Sesión</div>
-          <div className="LineShape"></div>
+          <div className="aligneLineShape">
+          <div className="LineShape"/>
+          </div>
+          
           <div className="My4InicioSesion">
-          <hr class="my-4" />
+          <hr className="my-4" />
           </div>
           
           <div className="IniciarSesion">
@@ -50,7 +53,7 @@ class InicioSesion extends React.Component {
                   class="form-check-input"
                   name="Recuerdame"
                 />
-                <label class="form-check-label">Recuerdame</label>
+                <label className="form-check-label">Recuerdame</label>
               </div>
               <div className="InicarSesionBoton">
                 <a href="/" class="btn btn-dark">

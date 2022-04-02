@@ -18,15 +18,24 @@ class RegistroClientes extends React.Component {
                     <input
                       class="form-control form-control-lg"
                       type="text"
-                      name="nombre"
-                      placeholder="Nombre completo"
+                      name="first_name"
+                      placeholder="Nombre"
                     />
+                    <div className="MargenesTextsForms1">
+                    <div className="MargenesTextsForms2">Apellidos</div>
+                    <input
+                      class="form-control form-control-lg"
+                      type="text"
+                      name="last_name"
+                      placeholder="Apellidos"
+                    />
+                    </div>
                     <div className="MargenesTextsForms1">
                       <div className="MargenesTextsForms2">Teléfono</div>
                       <input
                         class="form-control form-control-lg"
                         type="tel"
-                        name="nombre"
+                        name="phone_number"
                         placeholder="Teléfono"
                       />
                     </div>
@@ -39,76 +48,28 @@ class RegistroClientes extends React.Component {
                         placeholder="Correo Electronico"
                       />
                     </div>
-                    <div className="MargenesTextsForms1">
-                      <div className="MargenesTextsForms2">Contraseña</div>
-                      <input
-                        class="form-control form-control-lg"
-                        type="password"
-                        name="contrasena"
-                        placeholder="Contraseña"
-                      />
-                    </div>
-                 
-                    <div className="MargenesTextsForms1">
-                      <div className="MargenesTextsForms2">Sexo</div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios1"
-                          value="option1"
-                        />
-                        <label class="form-check-label" for="exampleRadios1">
-                          Masculino
+                    <div className="MargenesImgForms1">
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">
+                          <div className="MargenesImgForms2">
+                            Foto de perfil
+                          </div>
                         </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios2"
-                          value="option2"
-                        />
-                        <label class="form-check-label" for="exampleRadios2">
-                          Femenino
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios3"
-                          value="option3"
-                        />
-                        <label class="form-check-label" for="exampleRadios3">
-                          Otro
-                        </label>
-                      </div>
-                      <div className="MargenesImgForms1">
-                        <div class="form-group">
-                          <label for="exampleFormControlFile1">
-                            <div className="MargenesImgForms2">
-                              Foto de perfil
-                            </div>
-                          </label>
-                          <div>
-                            <input
-                              type="file"
-                              class="form-control-file"
-                              id="exampleFormControlFile1"
-                            />
-                            <div className="BotonForms1">
-                              <button
-                                type="button"
-                                value="Submit"
-                                class="btn btn-dark btn-lg btn-block"
-                              >
-                                Registrar
-                              </button>
-                            </div>
+                        <div>
+                          <input
+                            type="file"
+                            class="form-control-file"
+                            id="exampleFormControlFile1"
+                            name="image"
+                          />
+                          <div className="BotonForms1">
+                            <button
+                              type="button"
+                              value="Submit"
+                              class="btn btn-dark btn-lg btn-block"
+                            >
+                              Registrar
+                            </button>
                           </div>
                         </div>
                       </div>

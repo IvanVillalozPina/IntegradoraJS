@@ -4,8 +4,17 @@ import 'bootstrap/js/dist/modal';
 import "./styles/MenuInicio.css";
 
 class MenuInicio extends React.Component {
+  state = {
+    products: []
+}
+
+componentDidMount() {
+    fetch('http://127.0.0.1:8000/api/cargaempleados')
+        .then(response => response.json())
+        .then(productsJson => this.setState({ products: productsJson }))
+}
   render() {
-    const { name, description, image, price, id_category } = this.props;
+    const { name, description, image, price, /* id_category */ } = this.props;
     return (   
       <div className=" CentrarItems col-sm col-md col-lg col-xl">
         <div className="TarjetasMenuInicio">
