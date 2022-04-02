@@ -12,6 +12,7 @@ import RegistroUsuarios from '../pages/RegistroUsuarios'
 import ConsultaProductos from '../pages/ConsultaProductos'
 import RegistroClientes from '../pages/RegistroClientes'
 import AltaProductos from '../pages/AltaProductos'
+import ProductDetail from '../pages/ProductDetail';
 
 
 function Rutas(){
@@ -26,6 +27,7 @@ function Rutas(){
             <Route exact path="/RegistroUsuarios" component={RegistroUsuarios}/>
             <Route exact path="/ConsultaProductos" component={ConsultaProductos}/>
             <Route exact path="/AltaProductos" component={AltaProductos}/>
+            <Route exact path="/ProductDetail" component={ProductDetail}/>
             <Route component={NoExiste}/>
             </Switch>    
       </BrowserRouter>
