@@ -13,6 +13,9 @@ import ConsultaProductos from '../pages/ConsultaProductos'
 import RegistroClientes from '../pages/RegistroClientes'
 import AltaProductos from '../pages/AltaProductos'
 import ProductDetail from '../pages/ProductDetail';
+import CategoryEdit from '../pages/CategoryEdit';
+import CategoryTable from '../pages/CategoryTable';
+import CategoryDelete from '../pages/CategoryDelete';
 
 
 function Rutas(){
@@ -28,6 +31,9 @@ function Rutas(){
             <Route exact path="/ConsultaProductos" component={ConsultaProductos}/>
             <Route exact path="/AltaProductos" component={AltaProductos}/>
             <Route exact path="/ProductDetail" component={ProductDetail}/>
+            <Route exact path="/CategoryEdit" component={CategoryEdit}/>
+            <Route exact path="/CategoryTable" component={CategoryTable}/>
+            <Route exact path="/CategoryDelete" component={CategoryDelete}/>
             <Route component={NoExiste}/>
             </Switch>    
       </BrowserRouter>
