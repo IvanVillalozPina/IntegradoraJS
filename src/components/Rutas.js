@@ -16,6 +16,7 @@ import ProductDetail from '../pages/ProductDetail';
 import CategoryEdit from '../pages/CategoryEdit';
 import CategoryTable from '../pages/CategoryTable';
 import CategoryDelete from '../pages/CategoryDelete';
+import ProductsTable  from '../pages/ProductsTable';
 
 
 function Rutas(){
@@ -34,6 +35,7 @@ function Rutas(){
             <Route exact path="/CategoryEdit" component={CategoryEdit}/>
             <Route exact path="/CategoryTable" component={CategoryTable}/>
             <Route exact path="/CategoryDelete" component={CategoryDelete}/>
+            <Route exact path="/ProductsTable" component={ProductsTable}/>
             <Route component={NoExiste}/>
             </Switch>    
       </BrowserRouter>
