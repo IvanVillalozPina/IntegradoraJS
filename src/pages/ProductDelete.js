@@ -12,7 +12,7 @@ class ProductDelete extends React.Component {
             .then(response => response.json())
             .then(productsJson => this.setState({ products: productsJson }))
 
-        fetch('http://127.0.0.1:8000/api/eliminaempleado/' + this.props.location.state.id_product,
+        fetch('' + this.props.location.state.id_product,
         {method: 'DELETE'})
     }
 

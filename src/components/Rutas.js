@@ -17,25 +17,36 @@ import CategoryEdit from '../pages/CategoryEdit';
 import CategoryTable from '../pages/CategoryTable';
 import CategoryDelete from '../pages/CategoryDelete';
 import ProductsTable  from '../pages/ProductsTable';
-
+import ProductDelete from '../pages/ProductDelete';
+import CustomerTable from '../pages/CustomerTable';
 
 function Rutas(){
   return(
     
       <BrowserRouter> 
             <Switch>     
-            <Route exact path="/" component={MenuPrincipal}/>
+            <Route exact path="/AltaProductos" component={AltaProductos}/>
+
+            <Route exact path="/CategoryDelete" component={CategoryDelete}/>
+            <Route exact path="/CategoryEdit" component={CategoryEdit}/>
+            <Route exact path="/CategoryTable" component={CategoryTable}/>
+
+            <Route exact path="/ConsultaProductos" component={ConsultaProductos}/>
+
+            <Route exact path="/CustomerTable" component={CustomerTable}/>
+
             <Route exact path="/InicioSesion" component={InicioSesion}/> 
+            
+            <Route exact path="/" component={MenuPrincipal}/>
+
+            <Route exact path="/ProductDelete" component={ProductDelete}/>
+            <Route exact path="/ProductDetail" component={ProductDetail}/>
+            <Route exact path="/ProductsTable" component={ProductsTable}/>
+           
             <Route exact path="/RegistroClientes" component={RegistroClientes}/>
 
             <Route exact path="/RegistroUsuarios" component={RegistroUsuarios}/>
-            <Route exact path="/ConsultaProductos" component={ConsultaProductos}/>
-            <Route exact path="/AltaProductos" component={AltaProductos}/>
-            <Route exact path="/ProductDetail" component={ProductDetail}/>
-            <Route exact path="/CategoryEdit" component={CategoryEdit}/>
-            <Route exact path="/CategoryTable" component={CategoryTable}/>
-            <Route exact path="/CategoryDelete" component={CategoryDelete}/>
-            <Route exact path="/ProductsTable" component={ProductsTable}/>
+          
             <Route component={NoExiste}/>
             </Switch>    
       </BrowserRouter>
