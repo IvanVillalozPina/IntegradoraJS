@@ -56,7 +56,7 @@ class InicioSesion extends React.Component {
                 <label className="form-check-label">Recuerdame</label>
               </div>
               <div className="InicarSesionBoton">
-                <a href="/" class="btn btn-dark">
+                <a href="/DashAdmin" class="btn btn-dark">
                   Iniciar Sesión
                 </a>
               </div>

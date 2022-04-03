@@ -19,6 +19,8 @@ import CategoryDelete from '../pages/CategoryDelete';
 import ProductsTable  from '../pages/ProductsTable';
 import ProductDelete from '../pages/ProductDelete';
 import CustomerTable from '../pages/CustomerTable';
+import DashAdmin from '../pages/DashAdmin';
+import PaymentM from '../pages/PaymentM';
 
 function Rutas(){
   return(
@@ -46,6 +48,10 @@ function Rutas(){
             <Route exact path="/RegistroClientes" component={RegistroClientes}/>
 
             <Route exact path="/RegistroUsuarios" component={RegistroUsuarios}/>
+
+            <Route exact path="/DashAdmin" component={DashAdmin}/>
+
+            <Route exact path="/PaymentM" component={PaymentM}/>
           
             <Route component={NoExiste}/>
             </Switch>    
