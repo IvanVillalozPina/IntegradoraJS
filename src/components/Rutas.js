@@ -21,6 +21,7 @@ import ProductDelete from '../pages/ProductDelete';
 import CustomerTable from '../pages/CustomerTable';
 import DashAdmin from '../pages/DashAdmin';
 import PaymentM from '../pages/PaymentM';
+import Ticket from '../pages/Ticket';
 
 function Rutas(){
   return(
@@ -52,6 +53,8 @@ function Rutas(){
             <Route exact path="/DashAdmin" component={DashAdmin}/>
 
             <Route exact path="/PaymentM" component={PaymentM}/>
+
+            <Route exact path="/Ticket" component={Ticket}/>
           
             <Route component={NoExiste}/>
             </Switch>    
