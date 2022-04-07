@@ -1,8 +1,52 @@
 import React from "react";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/styles/EstilosFormularios.css";
 
 class RegistroUsuarios extends React.Component {
+  // Init state
+  state = {
+    name: "",
+    password: "",
+    password_confirmation: "",
+    email: "",
+  }
+
+  // function to update the input into the state
+  form2val = ({name, value}) => {
+    this.setState({[name]: value});
+  }
+
+  // function to register
+  register(){
+    axios.post(
+      "http://127.0.0.1:8000/api/user/register",
+      {
+        name: this.state.email,
+        email: this.state.email,
+        password: this.state.password,
+        password_confirmation: this.state.password_confirmation,
+      },
+      {
+        headers: {
+          'X-CSRFToken': '{{ csrf_token }}'
+        }
+      }
+    )
+    .then(res => {
+      console.log(res);
+      console.log(res.data);
+      // Redirect to login in /user/login
+      this.props.history.push("/user/login");
+    })
+    .catch(err => {
+      console.log(err);
+      console.log(err.response);
+      // Redirect to register in /user/register
+      this.props.history.push("/user/register");
+    });
+  }
+
   render() {
     return (
       <div>
@@ -21,6 +65,7 @@ class RegistroUsuarios extends React.Component {
                       type="text"
                       name="name"
                       placeholder="Nombre completo"
+                      onChange={(e) => this.form2val(e.target)}
                     />
                     <div className="MargenesTextsForms1">
                       <div className="MargenesTextsForms2">Correo</div>
@@ -29,6 +74,7 @@ class RegistroUsuarios extends React.Component {
                         type="email"
                         name="email"
                         placeholder="Correo Electronico"
+                        onChange={(e) => this.form2val(e.target)}
                       />
                     </div>
                     <div className="MargenesTextsForms1">
@@ -38,38 +84,30 @@ class RegistroUsuarios extends React.Component {
                         type="password"
                         name="password"
                         placeholder="Contraseña"
+                        onChange={(e) => this.form2val(e.target)}
                       />
                     </div>
-                  <div className="SelectForms">
-                    <select
-                      className="form-select form-select-sm form-select"
-                      aria-label=".form-select-sm example"
-                    >
-                      <option selected name="id_role">Rol</option>
-                      <option value="1"></option>
-                      <option value="2"></option>
-                      <option value="3"></option>
-                    </select>
-                  </div>
+                    <div className="MargenesTextsForms1">
+                      <div className="MargenesTextsForms2">Confirmar contraseña</div>
+                      <input
+                        class="form-control form-control-lg"
+                        type="password"
+                        name="password_confirmation"
+                        placeholder="Contraseña"
+                        onChange={(e) => this.form2val(e.target)}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="MargenesImgForms1">
                   <div class="form-group">
-                    <label for="exampleFormControlFile1">
-                      <div className="MargenesImgForms2">Foto de perfil</div>
-                    </label>
                     <div>
-                      <input
-                        type="file"
-                        class="form-control-file"
-                        id="exampleFormControlFile1"
-                        name="image"
-                      />
                       <div className="BotonForms1">
                         <button
                           type="button"
                           value="Submit"
                           className="btn btn-dark btn-lg btn-block"
+                          onClick={() => this.register()}
                         >
                           Registrar
                         </button>

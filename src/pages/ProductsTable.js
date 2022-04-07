@@ -1,24 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 class ProductsTable extends React.Component {
-
+    // Init state
     state = {
         products: []
     }
 
-    componentDidMount() {
-        fetch('')
-            .then(response => response.json())
-            .then(productsJson => this.setState({ products: productsJson }))
+    // function to update the input into the state
+    form2val = ({name, value}) => {
+        this.setState({[name]: value});
     }
 
+    // function to get all products
+    componentDidMount(){
+        axios.get(
+        "http://127.0.0.1:8000/api/products/"
+        )
+        .then(res => {
+        console.log(res);
+        console.log(res.data);
+        console.log(res.data.products);
+        // check null
+        
+            this.setState({
+                products: res.data.products
+            });
+        
+        })
+        .catch(err => {
+        console.log(err);
+        console.log(err.response);
+        });
+    }
     render() {
-        const { products } = this.state
         return (
             <div>
                 <h1>Tabla Productos</h1>
-
+                <Link to={{pathname:'/products/form/register'}} className="btn btn-primary">Crear</Link>
                 <br />
                 <table className="table table-striped table-bordered table-hover">
                     <thead>
@@ -31,35 +51,29 @@ class ProductsTable extends React.Component {
                             <th scope="col-1">Disponibilidad</th>
                             <th scope="col-2">Referencia</th>
                             <th scope="col-1">Categoria</th>
+                            <th scope="col-1">Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {products.map((product, i) =>
-                            <tr key={i}>
-                                <th scope="row">{i + 1}</th>
-                                <td><img src={product.image} className="rounded" width="100" height="100" alt="Empleado" /></td>
-                                <td>{product.name}</td>
-                                <td>{product.description}</td>
-                                <td>{product.price}</td>
-                                <td>{product.stock}</td>
-                                <td>{product.reference}</td>
-                                <td>{product.id_category}</td>
-                                <td>
+                        {
+                            this.state.products.map(product => (
+                                <tr>
+                                    <th scope="row">{product._id}</th>
+                                    <th scope="row"><img src={product.image} alt="Imagen" width="100" height="100"/></th>
+                                    <td>{product.name}</td>
+                                    <td>{product.description}</td>
+                                    <td>{product.price}</td>
+                                    <td>{product.stock}</td>
+                                    <td>{product.reference}</td>
+                                    <td>{product.category === undefined ? product.id_category : product.category}</td>
                                     <td>
-                                        <Link to={{ pathname: '/ProductDetail', state: { id_product: product.id_product } }}>
-                                            <button type="button" className="btn btn-dark">Detalle</button>
-                                        </Link>
-                                    </td>
+                                        <Link to={{pathname:'/products/detail/', state:{_id:product._id}}} className="btn btn-primary">Ver</Link>
+                                        <Link to={{pathname:'/products/delete/', state:{_id:product._id}}} className="btn btn-danger">Eliminar</Link>
 
-                                    <td>
-                                        <Link to={{ pathname: '/ProductDelete', state: { id_product: product.id_product  } }}>
-                                            <button type="button" className="btn btn-danger">Eliminar</button>
-                                        </Link>
                                     </td>
-
-                                </td>
-                            </tr>
-                        )}
+                                </tr>
+                            ))  
+                        }
                     </tbody>
                 </table>
             </div>

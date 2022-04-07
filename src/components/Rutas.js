@@ -13,7 +13,7 @@ import ConsultaProductos from '../pages/ConsultaProductos'
 import RegistroClientes from '../pages/RegistroClientes'
 import AltaProductos from '../pages/AltaProductos'
 import ProductDetail from '../pages/ProductDetail';
-import CategoryEdit from '../pages/CategoryEdit';
+import CategoryAdd from '../pages/CategoryAdd';
 import CategoryTable from '../pages/CategoryTable';
 import CategoryDelete from '../pages/CategoryDelete';
 import ProductsTable  from '../pages/ProductsTable';
@@ -27,35 +27,29 @@ function Rutas(){
   return(
     
       <BrowserRouter> 
-            <Switch>     
-            <Route exact path="/AltaProductos" component={AltaProductos}/>
-
-            <Route exact path="/CategoryDelete" component={CategoryDelete}/>
-            <Route exact path="/CategoryEdit" component={CategoryEdit}/>
-            <Route exact path="/CategoryTable" component={CategoryTable}/>
-
-            <Route exact path="/ConsultaProductos" component={ConsultaProductos}/>
-
-            <Route exact path="/CustomerTable" component={CustomerTable}/>
-
-            <Route exact path="/InicioSesion" component={InicioSesion}/> 
-            
+            <Switch>
             <Route exact path="/" component={MenuPrincipal}/>
 
-            <Route exact path="/ProductDelete" component={ProductDelete}/>
-            <Route exact path="/ProductDetail" component={ProductDetail}/>
-            <Route exact path="/ProductsTable" component={ProductsTable}/>
+            <Route exact path="/products/form/register" component={AltaProductos}/>
+            <Route exact path="/products/look" component={ConsultaProductos}/>
+            <Route exact path="/products/delete" component={ProductDelete}/>
+            <Route exact path="/products/detail" component={ProductDetail}/>
+            <Route exact path="/products/list" component={ProductsTable}/>
            
-            <Route exact path="/RegistroClientes" component={RegistroClientes}/>
+            <Route exact path="/categories/delete" component={CategoryDelete}/>
+            <Route exact path="/categories/form/register" component={CategoryAdd}/>
+            <Route exact path="/categories/list" component={CategoryTable}/>
 
-            <Route exact path="/RegistroUsuarios" component={RegistroUsuarios}/>
+            <Route exact path="/customers/list" component={CustomerTable}/>
+            <Route exact path="/customer/register" component={RegistroClientes}/>
 
-            <Route exact path="/DashAdmin" component={DashAdmin}/>
+            <Route exact path="/payment/list" component={PaymentM}/>
+            <Route exact path="/sells/ticket" component={Ticket}/>
+            
+            <Route exact path="/user/login" component={InicioSesion}/> // Ok 
+            <Route exact path="/user/register" component={RegistroUsuarios}/> // Ok
 
-            <Route exact path="/PaymentM" component={PaymentM}/>
-
-            <Route exact path="/Ticket" component={Ticket}/>
-          
+            <Route exact path="/user/dash" component={DashAdmin}/>
             <Route component={NoExiste}/>
             </Switch>    
       </BrowserRouter>

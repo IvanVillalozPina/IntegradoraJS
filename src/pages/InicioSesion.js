@@ -1,9 +1,51 @@
 import React from "react";
+import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../components/styles/InicioSesion.css";
 import CasaMontero from "../pictures/CasaMontero.jpg";
 
 class InicioSesion extends React.Component {
+  // init state
+  state = {
+    user: "",
+    password: "",
+    token: "",
+  };
+
+  // function to login
+  login(){
+      axios.post(
+        "http://127.0.0.1:8000/api/user/login",
+        {
+          email: this.state.email,
+          password: this.state.password
+        },
+        {
+          headers: {
+            'X-CSRFToken': '{{ csrf_token }}'
+          }
+        }
+      )
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+        // redirect to home
+        this.props.history.push("/");
+      })
+      .catch(err => {
+        console.log(err);
+        console.log(err.response);
+        if (err.response.status === 419) {
+          console.log("Usuario o contraseña incorrectos");
+        }
+      });
+    }
+
+  // function to update the input into the state
+  form2val = ({name, value}) => {
+    this.setState({[name]: value});
+  }
+
   render() {
     return (
       <div className="JumbotronInicio">
@@ -31,8 +73,9 @@ class InicioSesion extends React.Component {
                 <input
                   type="email"
                   class="form-control"
-                  name="IngresaCorreo"
+                  name="email"
                   placeholder="Ingresa correo electrónico"
+                  onChange={e => this.form2val(e.target)}
                 />
                 <small class="form-text text-muted">
                   Nunca compartiremos su correo electrónico.
@@ -43,22 +86,15 @@ class InicioSesion extends React.Component {
                 <input
                   type="password"
                   class="form-control"
-                  name="IngresaContrasena"
+                  name="password"
                   placeholder="Contraseña"
+                  onChange={e => this.form2val(e.target)}
                 />
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  name="Recuerdame"
-                />
-                <label className="form-check-label">Recuerdame</label>
               </div>
               <div className="InicarSesionBoton">
-                <a href="/DashAdmin" class="btn btn-dark">
+                <button type="button" className="btn btn-dark" onClick={() => this.login()}>
                   Iniciar Sesión
-                </a>
+                </button>
               </div>
             </form>
           </div>
