@@ -34,7 +34,7 @@ class ProductDelete extends React.Component {
                 </div>
                 <div>
                     <Link to="/products/list/">
-                        <button type="button" className="btn btn-dark">Regresar</button>
+                        <button type="button" className="btn btn-lg btn-dark">Regresar</button>
                     </Link>
                 </div>
             </div>

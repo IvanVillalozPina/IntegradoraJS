@@ -30,9 +30,9 @@ function Rutas(){
             <Switch>
             <Route exact path="/" component={MenuPrincipal}/>
 
-            <Route exact path="/products/form/register" component={AltaProductos}/> {/* NAV/SEMI-RESPONSIVO */}
-            <Route exact path="/products/look" component={ConsultaProductos}/> {/* NAV/SEMI-RESPONSIVO */}
-            <Route exact path="/products/delete" component={ProductDelete}/>
+            <Route exact path="/products/form/register" component={AltaProductos}/> {/* NAVEGABLE/SEMI-RESPONSIVO */}
+            <Route exact path="/products/look" component={ConsultaProductos}/> {/* NAVEGABLE/SEMI-RESPONSIVO */}
+            <Route exact path="/products/delete" component={ProductDelete}/> {/* NAVEGABLE */}
             <Route exact path="/products/detail" component={ProductDetail}/>
             <Route exact path="/products/list" component={ProductsTable}/>
            
