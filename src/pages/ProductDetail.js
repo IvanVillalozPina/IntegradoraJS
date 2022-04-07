@@ -29,7 +29,7 @@ class ProductDetail extends React.Component {
         return (
             <div>
                 <h1>Detalle del producto</h1>
-                <img src={this.state.product.image} className="img-thumbnail" width="500" height="300" alt='Empleado'/>
+                <img src={this.state.product.image} className="img-thumbnail" width="500" height="300" alt='Producto'/>
                 <br/>
                 Nombre: {this.state.product.name}
                 <br/>

@@ -1,22 +1,10 @@
+.CasaMonteroDivImagen {
+    text-align: left;
+  }
+
 .ImagenMontero{
     width: 70px; /*Horizontal*/
     height: 70px; /*Vertical*/
+    margin-left: 20px;
     border-radius: 10px;
-    box-shadow: 3px 3px 1px 1px orangered;
-}
-.InicioNavBar{
-   margin-left: 20px;
-   margin-right: 25px;   
-}
-
-.SelectInSs{
-    font-family: 'Times New Roman', Times, serif;
-    width: 300px;
-}
-
-.BotonIniciarSesion{
-  
-    margin-left: 700px;
-    margin-right: 50px;
-   
-}
+  }

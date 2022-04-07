@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/js/dist/modal';
 import "../components/styles/MenuPrincipal.css";
 import MenuLista from "../components/MenuLista";
-import NavBar from "../components/NavBar";
+import NavBarPrincipal from "../components/NavBarPrincipal";
 import Carrusel from "../components/Carrusel";
 
 class MenuPrincipal extends React.Component {
@@ -48,12 +48,12 @@ class MenuPrincipal extends React.Component {
     return (
       <div>
         <div>
-          <NavBar />
+          <NavBarPrincipal/>
         </div>
         <div>
           <Carrusel />
         </div>
-        <div className="ProductosTexto">Productos</div>
+        <div >Productos</div>
         <div className="colormy4">
           <hr class="my-4" />
         </div>

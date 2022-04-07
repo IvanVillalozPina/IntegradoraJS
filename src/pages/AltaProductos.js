@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../components/styles/EstilosFormularios.css'
+import NavBarPrincipal from "../components/NavBarPrincipal";
 import axios from "axios";
 
 class AltaProductos extends React.Component {
@@ -87,9 +88,12 @@ class AltaProductos extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-dark bg-dark center">
-          <div className="NavForms">Alta de productos</div>
-        </nav>
+          <div>
+          <NavBarPrincipal/>
+        </div>
+        <div className="TextsTittle">
+        <h1 className="display-1">Alta de productos</h1>
+        </div>
         <div className="Posicion1">
           <div className="Posicion2">
             <form className="Posicion3">
@@ -181,10 +185,10 @@ class AltaProductos extends React.Component {
                           <button
                             type="button"
                             value="Submit"
-                            class="btn btn-dark btn-lg btn-block"
+                            class="btn btn-warning btn-lg btn-block"
                             onClick={() => this.register()}
                           >
-                            Registrar
+                            Crear
                           </button>
                         </div>
                       </div>

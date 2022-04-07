@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "../components/styles/InicioSesion.css";
 import CasaMontero from "../pictures/CasaMontero.jpg";
 
@@ -50,49 +49,51 @@ class InicioSesion extends React.Component {
     return (
       <div className="JumbotronInicio">
         <div class="jumbotron">
-          <div className="CasaMonteroDiv">
+          <div className="CasaMonteroDivImagen">
             <img
               src={CasaMontero}
               className="CasaMonteroImg"
               alt="CasaMontero"
             />
           </div>
-          <div className="InicioSesionTexto">Iniciar Sesión</div>
-          <div className="aligneLineShape">
-          <div className="LineShape"/>
-          </div>
+          <h1 className="display-1">Iniciar Sesión</h1>
           
           <div className="My4InicioSesion">
           <hr className="my-4" />
           </div>
           
-          <div className="IniciarSesion">
+          <div className="IniciarSesionInputs">
             <form>
-              <div class="form-group">
-                <label>Correo electronico</label>
+              <div className="form-group">
+                <h2>Correo electronico</h2>
+                <div className="IniciarSesionEspacio" />
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   name="email"
                   placeholder="Ingresa correo electrónico"
                   onChange={e => this.form2val(e.target)}
                 />
-                <small class="form-text text-muted">
+                <small className="form-text text-muted">
+                <div className="IniciarSesionEspacioMedio" />
                   Nunca compartiremos su correo electrónico.
+                  <div className="IniciarSesionEspacio" />
                 </small>
               </div>
               <div class="form-group">
-                <label>Contraseña</label>
+             
+                <h2>Contraseña</h2>
+                <div className="IniciarSesionEspacio" />
                 <input
                   type="password"
-                  class="form-control"
+                  className="form-control"
                   name="password"
                   placeholder="Contraseña"
                   onChange={e => this.form2val(e.target)}
                 />
               </div>
               <div className="InicarSesionBoton">
-                <button type="button" className="btn btn-dark" onClick={() => this.login()}>
+                <button type="button" className="btn btn-lg btn-dark" onClick={() => this.login()}>
                   Iniciar Sesión
                 </button>
               </div>

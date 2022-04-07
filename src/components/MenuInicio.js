@@ -21,8 +21,8 @@ class MenuInicio extends React.Component {
                 <div className="TextosDescriptionMenuPrincipal">{description} </div>
               </div>
               <div>
-                <Link  to={{ pathname: '/ProductDetail'}}>
-                  <button type="button" className="btn btn-dark">Detalle</button>
+                <Link  to={{ pathname: '/products/detail'}}>
+                  <button type="button" className="btn btn-warning">Detalle</button>
                 </Link>
               </div>
             </div>
