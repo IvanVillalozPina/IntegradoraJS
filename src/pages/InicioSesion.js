@@ -93,7 +93,7 @@ class InicioSesion extends React.Component {
                 />
               </div>
               <div className="InicarSesionBoton">
-                <button type="button" className="btn btn-lg btn-dark" onClick={() => this.login()}>
+                <button type="button" className="btn btn-lg btn-primary" onClick={() => this.login()}>
                   Iniciar Sesión
                 </button>
               </div>

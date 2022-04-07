@@ -185,7 +185,7 @@ class AltaProductos extends React.Component {
                           <button
                             type="button"
                             value="Submit"
-                            class="btn btn-warning btn-lg btn-block"
+                            class="btn btn-lg btn-dark"  
                             onClick={() => this.register()}
                           >
                             Crear

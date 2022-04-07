@@ -1,13 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../components/styles/EstilosFormularios.css'
+import NavBarPrincipal from "../components/NavBarPrincipal";
 class ConsultaProductos extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-dark bg-dark center">
-          <div className="NavForms">Consulta de productos</div>
-        </nav>
+        <div>
+          <NavBarPrincipal/>
+        </div>
+        <div className="TextsTittle">
+        <h1 className="display-1">Consulta de productos</h1>
+        </div>
         <div className="Posicion1">
           <div className="Posicion2">
             <form className="Posicion3">
@@ -35,8 +39,8 @@ class ConsultaProductos extends React.Component {
                     </select>
                   </div>
                   <div className="BotonForms1">
-                    <button type="button" value="Submit" class="btn btn-dark">
-                      Registrar
+                    <button type="button" value="Submit" class="btn btn-lg btn-dark"  onClick={() => this.register()}>
+                      Consultar
                     </button>
                   </div>
                 </div>
