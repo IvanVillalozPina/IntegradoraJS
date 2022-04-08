@@ -41,7 +41,7 @@ function Rutas(){
             <Route exact path="/categories/list" component={CategoryTable}/> {/* NAVEGABLE */}
 
             <Route exact path="/customers/list" component={CustomerTable}/> {/* NAVEGABLE */}
-            <Route exact path="/customer/register" component={RegistroClientes}/> {/* NAVEGABLE */}
+            <Route exact path="/customers/form/register" component={RegistroClientes}/> {/* NAVEGABLE */}
 
             <Route exact path="/payment/list" component={PaymentM}/>  {/* NAVEGABLE */}
             <Route exact path="/sells/ticket" component={Ticket}/>  {/* NO VISUALIZA */}

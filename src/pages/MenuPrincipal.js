@@ -5,11 +5,13 @@ import "../components/styles/MenuPrincipal.css";
 import MenuLista from "../components/MenuLista";
 import NavBarPrincipal from "../components/NavBarPrincipal";
 import Carrusel from "../components/Carrusel";
+import axios from "axios";
 
 class MenuPrincipal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      products: [],
       datos: [
         {
           image: "./fotos/DesCruz.jpg",
@@ -44,6 +46,29 @@ class MenuPrincipal extends React.Component {
       ],
     };
   }
+
+  // function to get all products
+  componentDidMount() {
+    axios.get(
+        "http://127.0.0.1:8000/api/products/"
+    )
+        .then(res => {
+            console.log(res);
+            console.log(res.data);
+            console.log(res.data.products);
+            // check null
+
+            this.setState({
+                products: res.data.products
+            });
+
+        })
+        .catch(err => {
+            console.log(err);
+            console.log(err.response);
+        });
+  }
+
   render() {
     return (
       <div>
@@ -61,7 +86,7 @@ class MenuPrincipal extends React.Component {
           <hr class="my-4" />
         </div>
         <div>
-          <MenuLista productos={this.state.datos} />
+          <MenuLista productos={this.state.products} />
         </div>
       </div>
     );

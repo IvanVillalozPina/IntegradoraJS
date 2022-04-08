@@ -38,15 +38,12 @@ class NavBarPrincipal extends React.Component {
                 <li class="nav-item">
                   <a class="nav-link" href="/customers/list">Clientes</a>
                 </li>
-                <li class="nav-item">
+                {/*<li class="nav-item">
                   <a class="nav-link" href="/payment/list">Metodos de pago</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/sells/ticket">Compras</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/customer/register">Registro Usuarios</a>
-                </li>
+                </li>*/}
                 <div className="NVPBoton1">
                 <a
                     href="/user/register"
