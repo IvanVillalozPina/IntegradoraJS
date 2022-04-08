@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import NavBarPrincipal from "../components/NavBarPrincipal";
 
 class ProductsTable extends React.Component {
     // Init state
@@ -37,6 +38,9 @@ class ProductsTable extends React.Component {
     render() {
         return (
             <div>
+                <div>
+                    <NavBarPrincipal />
+                </div>
                 <h1>Tabla Productos</h1>
                 <Link to={{pathname:'/products/form/register'}} className="btn btn-primary">Crear</Link>
                 <br />

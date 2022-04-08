@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import NavBarPrincipal from "../components/NavBarPrincipal";
 
 class CategoryTable extends React.Component {
 
@@ -48,6 +49,9 @@ class CategoryTable extends React.Component {
         const { categories } = this.state
         return (
             <div>
+              <div>
+                <NavBarPrincipal />
+              </div>
                 <h1>Categorias</h1>
                 <Link to={{pathname:'/categories/form/register'}} className="btn btn-primary">Crear </Link>
                 <br />

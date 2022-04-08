@@ -1,13 +1,13 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/styles/EstilosFormularios.css";
+import NavBarPrincipal from "../components/NavBarPrincipal";
 class RegistroClientes extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-dark bg-dark center">
-          <div className="NavForms">Registro de clientes</div>
-        </nav>
+        <div>
+          <NavBarPrincipal />
+        </div>
         <div className="Posicion1">
           <div className="Posicion2">
             <form className="Posicion3">
@@ -66,7 +66,7 @@ class RegistroClientes extends React.Component {
                             <button
                               type="button"
                               value="Submit"
-                              class="btn btn-dark btn-lg btn-block"
+                              class="btn btn-primary btn-lg"
                             >
                               Registrar
                             </button>

@@ -31,23 +31,23 @@ function Rutas(){
             <Route exact path="/" component={MenuPrincipal}/>
 
             <Route exact path="/products/form/register" component={AltaProductos}/> {/* NAVEGABLE/SEMI-RESPONSIVO */}
-            <Route exact path="/products/look" component={ConsultaProductos}/> {/* NAVEGABLE/SEMI-RESPONSIVO */}
-            <Route exact path="/products/delete" component={ProductDelete}/> {/* NAVEGABLE */}
-            <Route exact path="/products/detail" component={ProductDetail}/>
-            <Route exact path="/products/list" component={ProductsTable}/>
+            <Route exact path="/products/look" component={ConsultaProductos}/>  {/* NAVEGABLE/SEMI-RESPONSIVO */}
+            <Route exact path="/products/delete" component={ProductDelete}/>  {/* NAVEGABLE */}
+            <Route exact path="/products/detail" component={ProductDetail}/>  {/* NAVEGABLE */}
+            <Route exact path="/products/list" component={ProductsTable}/>  {/* NAVEGABLE */}
            
-            <Route exact path="/categories/delete" component={CategoryDelete}/>
-            <Route exact path="/categories/form/register" component={CategoryAdd}/>
-            <Route exact path="/categories/list" component={CategoryTable}/>
+            <Route exact path="/categories/delete" component={CategoryDelete}/>  {/* NAVEGABLE */}
+            <Route exact path="/categories/form/register" component={CategoryAdd}/> {/* NAVEGABLE */}
+            <Route exact path="/categories/list" component={CategoryTable}/> {/* NAVEGABLE */}
 
-            <Route exact path="/customers/list" component={CustomerTable}/>
-            <Route exact path="/customer/register" component={RegistroClientes}/>
+            <Route exact path="/customers/list" component={CustomerTable}/> {/* NAVEGABLE */}
+            <Route exact path="/customer/register" component={RegistroClientes}/> {/* NAVEGABLE */}
 
-            <Route exact path="/payment/list" component={PaymentM}/>
-            <Route exact path="/sells/ticket" component={Ticket}/>
+            <Route exact path="/payment/list" component={PaymentM}/>  {/* NAVEGABLE */}
+            <Route exact path="/sells/ticket" component={Ticket}/>  {/* NO VISUALIZA */}
             
             <Route exact path="/user/login" component={InicioSesion}/> {/* OK/CSS/RESPONSIVO */}
-            <Route exact path="/user/register" component={RegistroUsuarios}/> {/*OK*/}
+            <Route exact path="/user/register" component={RegistroUsuarios}/> {/* NAVEGABLE */}
 
             <Route exact path="/user/dash" component={DashAdmin}/>
             <Route component={NoExiste}/>

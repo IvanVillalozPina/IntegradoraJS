@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import NavBarPrincipal from "../components/NavBarPrincipal";
 
 class CustomerTable extends React.Component {
 
@@ -17,6 +19,9 @@ class CustomerTable extends React.Component {
         const { customers } = this.state
         return (
             <div>
+                <div>
+                    <NavBarPrincipal />
+                </div>
                 <h1>Gestión de clientes</h1>
                 <br />
                 <table className="table table-striped table-bordered table-hover">

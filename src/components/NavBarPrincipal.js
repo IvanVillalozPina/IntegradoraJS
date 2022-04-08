@@ -9,7 +9,7 @@ class NavBarPrincipal extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
           <div class="container-fluid">
             <a class="navbar-brand" href="/">
               <div className="InicioNavBar">
@@ -44,22 +44,26 @@ class NavBarPrincipal extends React.Component {
                 <li class="nav-item">
                   <a class="nav-link" href="/sells/ticket">Compras</a>
                 </li>
-                <div className="BotonIniciarSesion">
+                <li class="nav-item">
+                  <a class="nav-link" href="/customer/register">Registro Usuarios</a>
+                </li>
+                  <a
+                    href="/user/register"
+                    className="btn btn-outline-light my-2 my-sm-0"
+                  >
+                    <i className="bi bi-person-circle" />Registro Admin
+                  </a>
                   <a
                     href="/user/login"
                     className="btn btn-outline-light my-2 my-sm-0"
                   >
-                    <i className="bi bi-person-circle" /> Iniciar Sesión
+                    <i className="bi bi-person-circle" /> Login Admin
                   </a>
-                </div>
-                <div>
-                  <a
-                    href="/RegistroClientes"
-                    className="btn btn-outline-light my-2 my-sm-0"
-                  >
-                    <i className="bi bi-plus-circle" /> Registrate
-                  </a>
-                </div>
+
+               
+               
+              
+            
               </ul>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
 import '../components/styles/EstilosFormularios.css'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import NavBarPrincipal from '../components/NavBarPrincipal';
 
 class CategoryAdd extends React.Component {
     // init state
@@ -44,9 +44,9 @@ class CategoryAdd extends React.Component {
     render() {
         return (
             <div>
-                <nav class="navbar navbar-dark bg-dark center">
-                    <div className="NavForms2">Categorias</div>
-                </nav>
+                <div>
+                    <NavBarPrincipal />
+                </div>
                 <div className="Posicion1">
                     <div className="Posicion2">
                         <div className="Posicion3">
@@ -65,7 +65,7 @@ class CategoryAdd extends React.Component {
                                         <div className='row'>
                                             <div class='col-3'>
                                                 <Link to="/">
-                                                    <button onClick={() => this.register()} type="button" className="btn btn-dark">Crear</button>
+                                                    <button onClick={() => this.register()} type="button" className="btn btn-primary btn-lg">Crear</button>
                                                 </Link>
                                             </div>
                                         </div>

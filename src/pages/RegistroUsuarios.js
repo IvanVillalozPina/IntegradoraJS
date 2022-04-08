@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../components/styles/EstilosFormularios.css";
+import NavBarPrincipal from "../components/NavBarPrincipal";
 
 class RegistroUsuarios extends React.Component {
   // Init state
@@ -50,9 +50,9 @@ class RegistroUsuarios extends React.Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-dark bg-dark center">
-          <div className="NavForms">Registro de usuarios</div>
-        </nav>
+        <div>
+          <NavBarPrincipal />
+        </div>
         <div className="Posicion1">
           <div className="Posicion2">
             <form className="Posicion3">
@@ -106,7 +106,7 @@ class RegistroUsuarios extends React.Component {
                         <button
                           type="button"
                           value="Submit"
-                          className="btn btn-dark btn-lg btn-block"
+                          className="btn btn-primary btn-lg btn-block"
                           onClick={() => this.register()}
                         >
                           Registrar

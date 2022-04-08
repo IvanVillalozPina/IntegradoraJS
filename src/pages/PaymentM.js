@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
+import NavBarPrincipal from "../components/NavBarPrincipal";
 
 class PaymentM extends React.Component {
     state = {
@@ -17,6 +18,9 @@ class PaymentM extends React.Component {
         const { metodos } = this.state
         return (
             <div>
+                <div>
+                    <NavBarPrincipal/>
+                </div>
                 <h1>Metodos de pago</h1>
 
                 <br />
