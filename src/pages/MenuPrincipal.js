@@ -53,7 +53,10 @@ class MenuPrincipal extends React.Component {
         <div>
           <Carrusel />
         </div>
-        <div >Productos</div>
+        <div className="MPProductosTxt">
+        <h6 className="display-1" >Productos</h6>
+        </div>
+
         <div className="colormy4">
           <hr class="my-4" />
         </div>

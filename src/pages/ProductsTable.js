@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import NavBarPrincipal from "../components/NavBarPrincipal";
+import '../components/styles/EstilosFormularios.css';
 
 class ProductsTable extends React.Component {
     // Init state
@@ -10,30 +11,30 @@ class ProductsTable extends React.Component {
     }
 
     // function to update the input into the state
-    form2val = ({name, value}) => {
-        this.setState({[name]: value});
+    form2val = ({ name, value }) => {
+        this.setState({ [name]: value });
     }
 
     // function to get all products
-    componentDidMount(){
+    componentDidMount() {
         axios.get(
-        "http://127.0.0.1:8000/api/products/"
+            "http://127.0.0.1:8000/api/products/"
         )
-        .then(res => {
-        console.log(res);
-        console.log(res.data);
-        console.log(res.data.products);
-        // check null
-        
-            this.setState({
-                products: res.data.products
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+                console.log(res.data.products);
+                // check null
+
+                this.setState({
+                    products: res.data.products
+                });
+
+            })
+            .catch(err => {
+                console.log(err);
+                console.log(err.response);
             });
-        
-        })
-        .catch(err => {
-        console.log(err);
-        console.log(err.response);
-        });
     }
     render() {
         return (
@@ -41,8 +42,13 @@ class ProductsTable extends React.Component {
                 <div>
                     <NavBarPrincipal />
                 </div>
-                <h1>Tabla Productos</h1>
-                <Link to={{pathname:'/products/form/register'}} className="btn btn-primary">Crear</Link>
+                <div className="TextsTittle">
+                 <h1 className="display-1">Tabla de Productos</h1>
+                 </div>
+                <div className="LinkCrear">
+                <Link to={{ pathname: '/products/form/register' }} className="btn btn-primary">Crear</Link>
+                </div>
+             
                 <br />
                 <table className="table table-striped table-bordered table-hover">
                     <thead>
@@ -63,7 +69,7 @@ class ProductsTable extends React.Component {
                             this.state.products.map(product => (
                                 <tr>
                                     <th scope="row">{product._id}</th>
-                                    <th scope="row"><img src={product.image} alt="Imagen" width="100" height="100"/></th>
+                                    <th scope="row"><img src={product.image} alt="Imagen" width="100" height="100" /></th>
                                     <td>{product.name}</td>
                                     <td>{product.description}</td>
                                     <td>{product.price}</td>
@@ -71,12 +77,15 @@ class ProductsTable extends React.Component {
                                     <td>{product.reference}</td>
                                     <td>{product.category === undefined ? product.id_category : product.category}</td>
                                     <td>
-                                        <Link to={{pathname:'/products/detail/', state:{_id:product._id}}} className="btn btn-primary">Ver</Link>
-                                        <Link to={{pathname:'/products/delete/', state:{_id:product._id}}} className="btn btn-danger">Eliminar</Link>
-
+                                        <div>
+                                            <Link to={{ pathname: '/products/detail/', state: { _id: product._id } }} className="btn btn-primary">Ver</Link>
+                                        </div>
+                                        <div className="LinksBottons">
+                                            <Link to={{ pathname: '/products/delete/', state: { _id: product._id } }} className="btn btn-danger">Eliminar</Link>
+                                        </div>
                                     </td>
                                 </tr>
-                            ))  
+                            ))
                         }
                     </tbody>
                 </table>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import NavBarPrincipal from "../components/NavBarPrincipal";
+import "../components/styles/EstilosFormularios.css";
 
 class CustomerTable extends React.Component {
 
@@ -22,7 +23,9 @@ class CustomerTable extends React.Component {
                 <div>
                     <NavBarPrincipal />
                 </div>
-                <h1>Gestión de clientes</h1>
+                <div className="TextsTittle">
+                    <h1 className="display-1">Gestión de clientes</h1>
+                </div>
                 <br />
                 <table className="table table-striped table-bordered table-hover">
                     <thead>

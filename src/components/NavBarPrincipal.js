@@ -47,18 +47,23 @@ class NavBarPrincipal extends React.Component {
                 <li class="nav-item">
                   <a class="nav-link" href="/customer/register">Registro Usuarios</a>
                 </li>
-                  <a
+                <div className="NVPBoton1">
+                <a
                     href="/user/register"
                     className="btn btn-outline-light my-2 my-sm-0"
                   >
                     <i className="bi bi-person-circle" />Registro Admin
                   </a>
-                  <a
+                </div>
+                 <div className="NVPBoton2">
+                 <a
                     href="/user/login"
                     className="btn btn-outline-light my-2 my-sm-0"
                   >
                     <i className="bi bi-person-circle" /> Login Admin
                   </a>
+                 </div>
+               
 
                
                

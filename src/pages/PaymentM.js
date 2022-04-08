@@ -2,6 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
 import NavBarPrincipal from "../components/NavBarPrincipal";
+import "../components/styles/EstilosFormularios.css";
 
 class PaymentM extends React.Component {
     state = {
@@ -21,8 +22,9 @@ class PaymentM extends React.Component {
                 <div>
                     <NavBarPrincipal/>
                 </div>
-                <h1>Metodos de pago</h1>
-
+                <div className="TextsTittle">
+                    <h1 className="display-1">Metodos de pago</h1>
+                </div>
                 <br />
                 <table className="table table-striped table-bordered table-hover">
                     <thead>

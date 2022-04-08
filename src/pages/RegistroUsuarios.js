@@ -53,6 +53,9 @@ class RegistroUsuarios extends React.Component {
         <div>
           <NavBarPrincipal />
         </div>
+        <div className="TextsTittle">
+        <h1 className="display-1">Registro Administradores</h1>
+        </div>
         <div className="Posicion1">
           <div className="Posicion2">
             <form className="Posicion3">
