@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+    h1{
+        font-size: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255);
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+.TablaCanal{
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100vh;
+    
+   
+}
+
+
+td{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bottonTop{
+    margin-top: 8px;
+}
+
+.bottonTopsecondary{
+    margin-top: 16px;
+}
+
+.bottonCrear{
+    padding-right: 40px;
+    text-align: end;
+}

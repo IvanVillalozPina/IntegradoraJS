@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.divi1{
+    display: flex;
+    justify-content: center;
+    align-items: center; //Siempre que se usa esto usar height
+    padding: 24px;
+}
+
+.divi2{
+    width: 555px;
+}
+
+input{
+    margin-top: 8px;
+}
+
+select{
+    margin-top: 8px;
+}
