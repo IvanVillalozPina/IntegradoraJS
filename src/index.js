@@ -19,4 +19,4 @@ const elemento = (
 
 
 const container = document.getElementById('root')
-ReactDOM.render(elemento,container)   // Para especificar que es un componente < 'nombre de la clase' />
+ReactDOM.render(elemento,container) 
