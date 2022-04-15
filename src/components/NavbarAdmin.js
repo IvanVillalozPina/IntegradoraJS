@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import '../components/styles/NavbarAdmin.css'
+
 import CasaMontero from "../pictures/CasaMontero.jpg";
 
 class NavbarAdmin extends React.Component {
@@ -14,41 +17,41 @@ class NavbarAdmin extends React.Component {
                 </div>
               </div>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarColor01">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="/">Inicio
-                    <span class="visually-hidden">(current)</span>
+            <div className="collapse navbar-collapse" id="navbarColor01">
+              <ul className="navbar-nav me-auto">
+                <li className="nav-item">
+                  <a className="nav-link active" href="/">Inicio
+                    <span className="visually-hidden">(current)</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/products/list">Categorias</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/products/list">Categorias</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/categories/list">Productos</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/categories/list">Productos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/customers/list">Clientes</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/customers/list">Clientes</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/payment/list">Metodos de pago</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/payment/list">Metodos de pago</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/sells/ticket">Ventas</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/sells/ticket">Ventas</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/sells/ticket">Usuarios</a>
+                <li className="nav-item">
+                  <a className="nav-link" href="/sells/ticket">Usuarios</a>
                 </li>
-                <div className="NVPBoton1">
-                <a
-                    href="/user/register"
-                    className="btn btn-outline-light my-2 my-sm-0"
-                  ><i class="bi bi-door-open-fill"/>Cerrar sesión
-                  </a>
+                <div>
+                <div className='bottonspace'>
+                <Link to={{ pathname: '/' }}>
+                    <button type='button' className="btn btn-warning btn-lg"><div className="tamaño">Cerrar sesión</div></button>
+                </Link>
+                </div>
                 </div>
               </ul>
             </div>

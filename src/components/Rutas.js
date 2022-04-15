@@ -12,8 +12,8 @@ function Rutas(){
     
       <BrowserRouter> 
             <Switch>
-            <Route exact path="/CategoriesTable" component={CategoriesTable}/>
-            <Route exact path="/CategoriesAdd" component={CategoriesAdd}/>
+            <Route exact path="/CategoriesTable" component={CategoriesTable}/> {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/CategoriesAdd" component={CategoriesAdd}/>     {/*  RESPOSIVO/CSS*   */}
 
         
 

@@ -7,7 +7,7 @@
   font-size: 80px;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: black;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -26,16 +26,23 @@ td {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+th {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .bottonTop {
   margin-top: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .bottonTopsecondary {
   margin-top: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .bottonCrear {
   padding-right: 40px;
   text-align: end;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /*# sourceMappingURL=CategoriesTable.css.map */

@@ -77,70 +77,22 @@ class CategoriesAdd extends React.Component {
             <div className='divi1'>
                 <div className='divi2'>
                     <center>
-                        <div class="card border-dark mb-3">
-                            <div class="card-header"> <h1>Creación de canal</h1> </div>
+                        <div class="card text-white bg-light mb-3">
+                            <div class="card-header"> <h1>Creación de categoria</h1> </div>
                             <div class="card-body">
                                 <div>
                                     <form onSubmit={this.subForm} >
-                                        Clave del canal <br /> <input className='input-group-text' type='text' name='id_canal'
+                                        ID categoria <br /> <input className='input-group-text' type='text' name='id_canal'
                                             onChange={this.campoChange}
                                         />
                                         <br />
-                                        Nombre del canal <br /> <input className='input-group-text' type='text' name='nombre_canal'
+                                        Nombre de la categoria <br /> <input className='input-group-text' type='text' name='nombre_canal'
                                             onChange={this.campoChange}
                                         />
                                         <br />
-                                        Correo <br /> <input className='input-group-text' type='email' name='correo'
-                                            onChange={this.campoChange}
-                                        />
-                                        <br />
-                                        Numero de telefono <br /> <input className='input-group-text' type='number' name='numero_telefono'
-                                            onChange={this.campoChange}
-                                        />
-                                        <br />
-                                        Horas emitidas <br /> <input className='input-group-text' type='number' name='horas'
-                                            onChange={this.campoChange}
-                                        />
-                                        <br />
-                                        Suscripciones <br /> <input className='input-group-text' type='number' name='suscripciones'
-                                            onChange={this.campoChange}
-                                        />
-                                        <br />
-                                        Anuncios <br /> <input className='input-group-text' type='number' name='anuncios'
-                                            onChange={this.campoChange}
-                                        />
-                                        <br />
-                                        Salario <br /> <input className='input-group-text' type='number' name='salario'
-                                            onChange={this.campoChange}
-                                        />
-                                        <br />
-                                        Foto <br /> <input className='input-group-text' type='text' name='foto'
-                                            onChange={this.campoChange}
-                                        />
-                                        <br />
-                                        Categoria <br />
-                                        <select name='id_categoria'
-                                        className='input-group-text'
-                                            onChange={this.campoChange}
-                                        >
-                                            <option value='0'>Seleccione una categoria</option>
-                                            {categorias.map((categorias, i) =>
-                                                <option value={categorias.id_categoria} key={i} > {categorias.categoria} </option>
-                                            )}
-                                        </select>
-                                        <br />
-                                        Metodo de pago <br />
-                                        <select name='id_metodo_pago'
-                                        className='input-group-text'
-                                            onChange={this.campoChange}
-                                        >
-                                            <option value='0'>Seleccione un metodo de pago</option>
-                                            {metodos_pago.map((metodos_pago, i) =>
-                                                <option value={metodos_pago.id_metodo_pago} key={i} > {metodos_pago.metodo} </option>
-                                            )}
-                                        </select>
-                                        <br />
-                                        <input className='btn btn-dark' type='submit' value='Crear canal' />
+                                        
+                                      
+                                        <input className='btn btn-dark' type='submit' value='Crear categoria' />
                                     </form>
                                 </div>
 
@@ -151,7 +103,7 @@ class CategoriesAdd extends React.Component {
                                         : <div></div>
                                     }
                                 </div>
-                                <Link to="/" >
+                                <Link to="/CategoriesTable" >
                                     <button type='button' className="btn btn-secondary">Regresar</button>
                                 </Link>
                             </div>
