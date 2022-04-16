@@ -8,7 +8,7 @@ class NavbarAdmin extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-info">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
               <div className="InicioNavBar">
@@ -29,27 +29,27 @@ class NavbarAdmin extends React.Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/products/list">Categorias</a>
+                  <a className="nav-link" href="/CategoriesTable">Categorias</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/categories/list">Productos</a>
+                  <a className="nav-link" href="">Productos</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/customers/list">Clientes</a>
+                  <a className="nav-link" href="">Clientes</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/payment/list">Metodos de pago</a>
+                  <a className="nav-link" href="">Metodos de pago</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/sells/ticket">Ventas</a>
+                  <a className="nav-link" href="">Ventas</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/sells/ticket">Usuarios</a>
+                  <a className="nav-link" href="">Usuarios</a>
                 </li>
                 <div>
                 <div className='bottonspace'>
                 <Link to={{ pathname: '/' }}>
-                    <button type='button' className="btn btn-warning btn-lg"><div className="tamaño">Cerrar sesión</div></button>
+                    <button type='button' className="btn btn-dark btn-lg"><div className="tamaño">Cerrar sesión</div></button>
                 </Link>
                 </div>
                 </div>

@@ -1,24 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../components/styles/CategoriesTable.css'
+import '../components/styles/Table.css'
 import NavbarAdmin from '../components/NavbarAdmin';
 
 class CategoriesTable extends React.Component {
-
-    state = {
-        canales: []
-    }
-
-    componentDidMount() {
-        fetch('http://127.0.0.1:8000/api/')
-            .then(response => response.json())  //convertir la respuesta a json
-            .then(canalesJson => this.setState({ canales: canalesJson })) //guardar el json en el estado
-    }
-
     render() {
 
-        const { canales } = this.state;
-
+      
         return (
             <div>
                 <div>
@@ -34,31 +22,33 @@ class CategoriesTable extends React.Component {
                 </div>
                 
                 <div className='TablaCanal'>
-                    <table className='table table-striped table-bordered table-primary' >
+                    <table className='table table-striped table-bordered table-light' >
                         <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Categoria</th>
+                                <th>Opciones</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {canales.map((canal, i) =>
-                                <tr key={i} >
-                                    <th scope='row'>    {i + 1}   </th>
+                                <tr>
+                                    <th scope='row'></th>
+                                    <td>
+
+                                    </td>
                                     <td>
                                         <div className='bottonTop'>
-                                        <Link to={{ pathname: '/CategoriesDetail', state: { id_canal: canal.id_canal } }}>
-                                            <button type='button' className="btn btn-info">Actualizar</button>
+                                        <Link to={{ pathname: '/CategoriesEdit'}}>
+                                            <button type='button' className="btn btn-secondary">Actualizar</button>
                                         </Link>
                                         </div>
                                         <div className='bottonTopsecondary'>
-                                        <Link to={{ pathname: '/CategoriesDelete', state: { id_canal: canal.id_canal } }}>
-                                            <button type='button' className="btn btn-danger">Eliminar</button>
+                                        <Link to={{ pathname: '/CategoriesDelete'}}>
+                                            <button type='button' className="btn btn-dark">Eliminar</button>
                                         </Link>
                                         </div>
                                     </td>
                                 </tr>
-                            )}
                         </tbody>
                     </table>
                 </div>

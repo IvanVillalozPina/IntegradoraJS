@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.division1{
+    display: flex;
+    justify-content: center;
+    align-items: center; //Siempre que se usa esto usar height
+    height:100vh;
+}
+
+.division2{
+    width: 555px;
+}

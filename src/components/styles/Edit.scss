@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.divx1{
+    display: flex;
+    justify-content: center;
+    align-items: center; //Siempre que se usa esto usar height
+    padding: 24px;
+}
+
+.divx2{
+    width: 555px;
+}
+
+input{
+    margin-top: 8px;
+}
+
+select{
+    margin-top: 8px;
+}
+
+.fotosx{
+    margin-top: 24px;
+    width: 250px;
+    height: 328px;
+    border-radius: 20px;
+    border: 5px outset darkgray;
+}
+
+.colorear{
+    color:black;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tipoletra{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
