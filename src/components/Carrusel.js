@@ -1,7 +1,7 @@
 import React from "react";
-import E1 from '../pictures/eliminar1.jpg'
-import E2 from '../pictures/eliminar2.jpg'
-import E3 from '../pictures/eliminar3.jpg'
+import E1 from '../pictures/Fondo1.jpg'
+import E2 from '../pictures/Fondo2.jpg'
+import E3 from '../pictures/Fondo3.jpg'
 
 class Carrusel extends React.Component {
     render() {
@@ -21,11 +21,11 @@ class Carrusel extends React.Component {
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                        <span class="sr-only">Anterior</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                        <span class="sr-only">Siguiente</span>
                     </a>
                 </div>
             </div>
