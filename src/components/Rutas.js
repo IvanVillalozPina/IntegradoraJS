@@ -16,17 +16,29 @@ import ProductsDetail from '../pages/ProductsDetail';
 import PaymentMethodsTable from '../pages/PaymentMethodsTable';
 import PaymentMethodsAdd from '../pages/PaymentMethodsAdd';
 
+import Home from '../pages/Home';
+
+import NotFound from '../pages/NotFound';
+
 import CustomersTable from '../pages/CustomersTable';
 import CustomersAdd from '../pages/CustomersAdd';
 import CustomersEdit from '../pages/CustomersEdit';
 import CustomersDelete from '../pages/CustomersDelete';
 import CustomersDetail from '../pages/CustomersDetail';
 
+import SalesTable from '../pages/SalesTable';
+import SalesAdd from '../pages/SalesAdd';
+import SalesDelete from '../pages/SalesDelete';
+import SalesDetail from '../pages/SalesDetail';
+
 function Rutas(){
   return(
     
       <BrowserRouter> 
             <Switch>
+
+            <Route exact path="/" component={Home} />
+
             <Route exact path="/CategoriesTable" component={CategoriesTable}/> {/*  RESPOSIVO/CSS   */}
             <Route exact path="/CategoriesAdd" component={CategoriesAdd}/>     {/*  RESPOSIVO/CSS   */}
             <Route exact path="/CategoriesEdit" component={CategoriesEdit}/>  {/*  RESPOSIVO/CSS**   */}
@@ -46,10 +58,13 @@ function Rutas(){
             <Route exact path="/CustomersEdit" component={CustomersEdit}/>  {/*  RESPOSIVO/CSS**   */}
             <Route exact path="/CustomersDelete" component={CustomersDelete}/>  {/*  RESPOSIVO/CSS**   */}
             <Route exact path="/CustomersDetail" component={CustomersDetail}/>  {/*  RESPOSIVO/CSS**   */}
-        
 
-           
-            
+            <Route exact path="/SalesTable" component={SalesTable}/>  {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/SalesAdd" component={SalesAdd}/>     {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/SalesDelete" component={SalesDelete}/>  {/*  RESPOSIVO/CSS**   */}
+            <Route exact path="/SalesDetail" component={SalesDetail}/>  {/*  RESPOSIVO/CSS**   */}
+
+            <Route component={NotFound}/>  {/*  RESPOSIVO/CSS   */}
             </Switch>    
       </BrowserRouter>
   ) 

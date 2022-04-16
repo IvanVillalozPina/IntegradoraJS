@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../components/styles/Detail.css'
 
-class ProductsDetail extends React.Component {
+class SalesDetail extends React.Component {
 
     render() {
         return (
@@ -10,23 +10,19 @@ class ProductsDetail extends React.Component {
                 <div className='div2'>
                     <center>
                         <div class="card bg-light mb-3">
-                            <div class="card-header"> <h1> Detalle producto </h1> </div>
+                            <div class="card-header"> <h1> Detalle venta </h1> </div>
                             <div class="card-body">
                                 <center>
-                                    <img src="" className='fotos' alt='producto' />
+                                    <img src="" className='fotos' alt='venta' />
                                 </center>
                                 <div className='Tamañoydemas'>
                                     <br />
                                     <div>
-                                    ID del producto :
+                                    Cliente :
                                     </div>
                                     <br />
                                     <div>
-                                    Nombre del producto :
-                                    </div>
-                                    <br />
-                                    <div>
-                                    Disponibilidad :
+                                    Producto :
                                     </div>
                                     <br />
                                     <div>
@@ -34,22 +30,18 @@ class ProductsDetail extends React.Component {
                                     </div>
                                     <br />
                                     <div>
-                                    Precio :
+                                    Metodo de pago :
                                     </div>
                                     <br />
                                     <div>
-                                    Referencia :
+                                    Fecha :
                                     </div>
                                     <br />
                                     <div>
-                                    Descripción :
+                                    Total :
                                     </div>
                                     <br />
-                                    <div>
-                                    Categoria :
-                                    </div>
-                                    <br />
-                                    <Link to="/ProductsTable" >
+                                    <Link to="/SalesTable" >
                                         <button type='button' className="btn btn-dark">Regresar</button>
                                     </Link>
                                 </div>
@@ -61,4 +53,4 @@ class ProductsDetail extends React.Component {
         )
     }
 }
-export default ProductsDetail;
+export default SalesDetail;

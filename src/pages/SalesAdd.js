@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import '../components/styles/Add.css'
 
-class ProductsAdd extends React.Component {
+class SalesAdd extends React.Component {
 
     render() {
 
@@ -11,65 +11,54 @@ class ProductsAdd extends React.Component {
                 <div className='divi2'>
                     <center>
                         <div className="card bg-light mb-3">
-                            <div className="card-header"> <h1>Creación de producto</h1> </div>
+                            <div className="card-header"> <h1>Nueva venta</h1> </div>
                             <div className="card-body">
                                 <div>
                                     <form >
                                         <div className='colorear'>
-                                            ID producto <br /> <input className='input-group-text' type='text' name='id_canal'
+                                            Cliente <br /> <input className='input-group-text' type='text' name='id_canal'
+                                            readOnly
                                             />
                                         </div>
                                         <br />
                                         <div className='colorear'>
-                                            Nombre del producto <br /> <input className='input-group-text' type='text' name='nombre_canal'
+                                            Producto <br /> <input className='input-group-text' type='text' name='nombre_canal'
+                                            
                                             />
                                             <br />
                                         </div>
                                         <div className='colorear'>
-                                            Descripción <br /> <input className='input-group-text' type='text' name='nombre_canal'
+                                            Cantidad <br /> <input className='input-group-text' type='text' name='nombre_canal'
                                             />
                                             <br />
                                         </div>
                                         <div className='colorear'>
-                                            Referencia <br /> <input className='input-group-text' type='text' name='nombre_canal'
+                                            Precio <br /> <input className='input-group-text' type='text' name='nombre_canal'
+                                            readOnly
                                             />
                                             <br />
                                         </div>
                                         <div className='colorear'>
-                                            Precio <br /> <input className='input-group-text' type='number' name='nombre_canal'
+                                            Subtotal <br /> <input className='input-group-text' type='number' name='nombre_canal'
                                             />
                                             <br />
                                         </div>
                                         <div className='colorear'>
-                                            Cantidad <br /> <input className='input-group-text' type='number' name='nombre_canal'
+                                            Total <br /> <input className='input-group-text' type='number' name='nombre_canal'
                                             />
-                                            <br />
-                                        </div>
-                                        <div className='colorear'>
-                                            Disponible
-                                            <br />
-                                            <input type='radio' name='sexo' value={true} /> SIㅤㅤ
-                                            <input type='radio' name='sexo' value={false} /> NO
                                         </div>
                                         <div className='colorear'>
                                             <br />
-                                            Categoria
+                                            Metodo de pago
                                         </div>
                                         <div className='tipoletra'>
                                             <select name='id_area'
                                                 className='input-group-text'
                                             >
-                                                <option value='0'>Seleccionar categoria</option>
+                                                <option value='0'>Seleccionar metodo de pago</option>
                                             </select>
                                             <br />
-                                            <div className='colorear'>
-                                                Imagen
-                                            </div>
-                                            <input type="file"
-                                                className='input-group-text'
-                                            ></input>
-                                            <br />
-                                            <input className='btn btn-secondary' type='submit' value='Crear producto' />
+                                            <input className='btn btn-secondary' type='submit' value='Pagar' />
                                         </div>
                                     </form>
                                 </div>
@@ -82,7 +71,7 @@ class ProductsAdd extends React.Component {
                                     }
                                 </div>
                                 */}
-                                <Link to="/ProductsTable" className='tipoletra' >
+                                <Link to="/SalesTable" className='tipoletra' >
                                     <button type='button' className="btn btn-dark">Regresar</button>
                                 </Link>
                             </div>
@@ -93,4 +82,4 @@ class ProductsAdd extends React.Component {
 
         )
     }
-} export default ProductsAdd;
+} export default SalesAdd;
