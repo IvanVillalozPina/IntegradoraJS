@@ -35,7 +35,7 @@ class NavbarAdmin extends React.Component {
                   <a className="nav-link" href="/ProductsTable">Productos</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">Clientes</a>
+                  <a className="nav-link" href="/CustomersTable">Clientes</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="/PaymentMethodsTable">Metodos de pago</a>

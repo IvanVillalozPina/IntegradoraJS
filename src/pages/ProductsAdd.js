@@ -40,21 +40,28 @@ class ProductsAdd extends React.Component {
                                             />
                                             <br />
                                         </div>
-                                        Disponible
-                                        <br />
-                                        <input type='radio' name='sexo' value={true} /> SIㅤㅤ
-                                        <input type='radio' name='sexo' value={false} /> NO
-                                        <div className='tipoletra'>
+                                        <div className='colorear'>
+                                            Disponible
                                             <br />
-                                            Categoria<br />
-                                            <select name='id_area' 
-                                             className='input-group-text'
+                                            <input type='radio' name='sexo' value={true} /> SIㅤㅤ
+                                            <input type='radio' name='sexo' value={false} /> NO
+                                        </div>
+                                        <div className='colorear'>
+                                            <br />
+                                            Categoria
+                                        </div>
+                                        <div className='tipoletra'>
+                                            <select name='id_area'
+                                                className='input-group-text'
                                             >
                                                 <option value='0'>Seleccionar categoria</option>
                                             </select>
                                             <br />
+                                            <div className='colorear'>
+                                                Imagen
+                                            </div>
                                             <input type="file"
-                                            className='input-group-text'
+                                                className='input-group-text'
                                             ></input>
                                             <br />
                                             <input className='btn btn-secondary' type='submit' value='Crear producto' />

@@ -16,6 +16,11 @@ import ProductsDetail from '../pages/ProductsDetail';
 import PaymentMethodsTable from '../pages/PaymentMethodsTable';
 import PaymentMethodsAdd from '../pages/PaymentMethodsAdd';
 
+import CustomersTable from '../pages/CustomersTable';
+import CustomersAdd from '../pages/CustomersAdd';
+import CustomersEdit from '../pages/CustomersEdit';
+import CustomersDelete from '../pages/CustomersDelete';
+import CustomersDetail from '../pages/CustomersDetail';
 
 function Rutas(){
   return(
@@ -36,7 +41,11 @@ function Rutas(){
             <Route exact path="/PaymentMethodsTable" component={PaymentMethodsTable}/>  {/*  RESPOSIVO/CSS   */}
             <Route exact path="/PaymentMethodsAdd" component={PaymentMethodsAdd}/>     {/*  RESPOSIVO/CSS   */}
 
-
+            <Route exact path="/CustomersTable" component={CustomersTable}/>  {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/CustomersAdd" component={CustomersAdd}/>     {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/CustomersEdit" component={CustomersEdit}/>  {/*  RESPOSIVO/CSS**   */}
+            <Route exact path="/CustomersDelete" component={CustomersDelete}/>  {/*  RESPOSIVO/CSS**   */}
+            <Route exact path="/CustomersDetail" component={CustomersDetail}/>  {/*  RESPOSIVO/CSS**   */}
         
 
            
