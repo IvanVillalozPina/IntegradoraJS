@@ -32,6 +32,9 @@ import SalesDelete from '../pages/SalesDelete';
 import SalesDetail from '../pages/SalesDetail';
 
 import UsersLogin from '../pages/UsersLogin';
+import UsersTable from '../pages/UsersTable';
+import UsersAdd from '../pages/UsersAdd';
+import UsersDelete from '../pages/UsersDelete';
 
 function Rutas(){
   return(
@@ -67,6 +70,9 @@ function Rutas(){
             <Route exact path="/SalesDetail" component={SalesDetail}/>  {/*  RESPOSIVO/CSS**   */}
 
             <Route exact path="/UsersLogin" component={UsersLogin}/>  {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/UsersTable" component={UsersTable}/>  {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/UsersAdd" component={UsersAdd}/>     {/*  RESPOSIVO/CSS   */}
+            <Route exact path="/UsersDelete" component={UsersDelete}/>  {/*  RESPOSIVO/CSS**   */}
 
             <Route component={NotFound}/>  {/*  RESPOSIVO/CSS   */}
             </Switch>    

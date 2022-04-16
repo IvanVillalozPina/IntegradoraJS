@@ -44,7 +44,7 @@ class NavbarAdmin extends React.Component {
                   <a className="nav-link" href="/SalesTable">Ventas</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="">Usuarios</a>
+                  <a className="nav-link" href="/UsersTable">Usuarios</a>
                 </li>
                 <div>
                 <div className='bottonspace'>
