@@ -1,5 +1,6 @@
 import React from "react";
 import '../components/styles/NavbarHome.css'
+import { Link } from "react-router-dom";
 
 import CasaMontero from "../pictures/CasaMontero.jpg";
 
@@ -10,9 +11,9 @@ class NavbarAdmin extends React.Component {
                 <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">
-                                <div>
-                                    <img src={CasaMontero} className="rounded" width="80" height="80" alt='Casa Montero Logo' />
-                                </div>
+                            <div>
+                                <img src={CasaMontero} className="rounded" width="80" height="80" alt='Casa Montero Logo' />
+                            </div>
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,14 +27,18 @@ class NavbarAdmin extends React.Component {
                                     </a>
                                 </li>
                                 <div className="BotonesAlFIinal">
-                                <button href="" className="btn btn-warning btn-lg">
-                                        Registrate
+                                <Link to="/" className='tipoletra' >
+                                    <button type='button' className="btn btn-warning btn-lg">
+                                    Registrate
                                     </button>
+                                </Link>
                                 </div>
                                 <div className="BotonesAlFIinal2">
-                                <button href="" className="btn btn-warning btn-lg">
-                                        <i className="bi bi-person-circle" />
+                                    <Link to="/UsersLogin" className='tipoletra' >
+                                    <button type='button' className="btn btn-warning btn-lg">
+                                    <i className="bi bi-person-circle" />
                                     </button>
+                                </Link>
                                 </div>
                             </ul>
                         </div>
