@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../components/styles/Table.css'
 import NavbarAdmin from '../components/NavbarAdmin';
 
-class CategoriesTable extends React.Component {
+class ProductsTable extends React.Component {
     render() {
 
         return (
@@ -12,11 +12,11 @@ class CategoriesTable extends React.Component {
                     <NavbarAdmin/>
                 </div>
                 <center>
-                    <h1>Categorias</h1>
+                    <h1>Productos</h1>
                 </center>
                 <div className='bottonCrear'>
-                <Link to={{ pathname: '/CategoriesAdd' }}>
-                    <button type='button' className="btn btn-info">Crear categoria</button>
+                <Link to={{ pathname: '/ProductsAdd' }}>
+                    <button type='button' className="btn btn-info">Crear producto</button>
                 </Link>
                 </div>
                 
@@ -25,6 +25,10 @@ class CategoriesTable extends React.Component {
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Imágen</th>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Precio</th>
                                 <th>Categoria</th>
                                 <th>Opciones</th>
                             </tr>
@@ -32,18 +36,25 @@ class CategoriesTable extends React.Component {
                         <tbody>
                                 <tr>
                                     <th scope='row'></th>
-                                    <td>
-
-                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                     <td>
                                         <div className='bottonTop'>
-                                        <Link to={{ pathname: '/CategoriesEdit'}}>
-                                            <button type='button' className="btn btn-secondary">Actualizar</button>
+                                        <Link to={{ pathname: '/ProductsDetail'}}>
+                                            <button type='button' className="btn btn-secondary">Detalle</button>
                                         </Link>
                                         </div>
                                         <div className='bottonTopsecondary'>
-                                        <Link to={{ pathname: '/CategoriesDelete'}}>
-                                            <button type='button' className="btn btn-dark">Eliminar</button>
+                                        <Link to={{ pathname: '/ProductsEdit'}}>
+                                            <button type='button' className="btn btn-dark">Actualizar</button>
+                                        </Link>
+                                        </div>
+                                        <div className='bottonTopsecondary'>
+                                        <Link to={{ pathname: '/ProductsDelete'}}>
+                                            <button type='button' className="btn btn-danger">Eliminar</button>
                                         </Link>
                                         </div>
                                     </td>
@@ -55,4 +66,4 @@ class CategoriesTable extends React.Component {
         )
     }
 }
-export default CategoriesTable
+export default ProductsTable
