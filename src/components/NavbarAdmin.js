@@ -1,10 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../components/styles/NavbarAdmin.css'
-
+import axios from 'axios';
 import CasaMontero from "../pictures/CasaMontero.jpg";
 
 class NavbarAdmin extends React.Component {
+  logout() {
+    axios.post(
+      'http://127.0.0.1:8000/api/auth/logout',
+      {},
+      {
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + localStorage.getItem('user_token')
+        }
+      }
+    )
+    .then(
+      response => {
+        localStorage.removeItem('user_token');
+        localStorage.removeItem('user_type');
+        window.location.href = '/';
+      }
+    )
+    .catch(
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
   render() {
     return (
       <div>
@@ -48,7 +74,7 @@ class NavbarAdmin extends React.Component {
                 </li>
                 <div>
                 <div className='bottonspace'>
-                <Link to={{ pathname: '/' }}>
+                <Link to={{ pathname: '/' }} onClick={this.logout}>
                     <button type='button' className="btn btn-dark btn-lg"><div className="tamaño">Cerrar sesión</div></button>
                 </Link>
                 </div>

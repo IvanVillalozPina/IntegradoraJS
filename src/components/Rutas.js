@@ -56,7 +56,6 @@ function Rutas(){
             <Route exact path="/ProductsDetail" component={ProductsDetail}/>  {/*  RESPOSIVO/CSS**   */}
 
             <Route exact path="/PaymentMethodsTable" component={PaymentMethodsTable}/>  {/*  RESPOSIVO/CSS   */}
-            <Route exact path="/PaymentMethodsAdd" component={PaymentMethodsAdd}/>     {/*  RESPOSIVO/CSS   */}
 
             <Route exact path="/CustomersTable" component={CustomersTable}/>  {/*  RESPOSIVO/CSS   */}
             <Route exact path="/CustomersAdd" component={CustomersAdd}/>     {/*  RESPOSIVO/CSS   */}

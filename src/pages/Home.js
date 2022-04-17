@@ -1,16 +1,14 @@
 import React from 'react';
-import NavbarHome from '../components/NavbarHome';
+import NavbarSelector from '../components/NavbarSelector';
 import Carrusel from '../components/Carrusel';
 import '../components/styles/Home.css';
-
-
 
 class Home extends React.Component {
     render() {
         return (
             <div>
                 <div>
-                    <NavbarHome />
+                    <NavbarSelector />
                     <Carrusel />
                 </div>
                 <br />

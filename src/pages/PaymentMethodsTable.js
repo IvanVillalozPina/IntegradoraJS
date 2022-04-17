@@ -1,24 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../components/styles/Table.css'
-import NavbarAdmin from '../components/NavbarAdmin';
+import '../components/styles/Table.css';
+import { LoginRequired } from '../utils/Middleware/LoginRequired';
+import NavbarSelector from '../components/NavbarSelector';
 
 class PaymentMethodsTable extends React.Component {
     render() {
-
         return (
             <div>
                 <div>
-                    <NavbarAdmin/>
+                    <NavbarSelector/>
                 </div>
                 <center>
                     <h1>Metodos de pago</h1>
                 </center>
-                <div className='bottonCrear'>
-                <Link to={{ pathname: '/PaymentMethodsAdd' }}>
-                    <button type='button' className="btn btn-info">Agregar metodo</button>
-                </Link>
-                </div>
                 
                 <div className='TablaCanal'>
                     <table className='table table-striped table-bordered table-light' >
@@ -40,4 +35,4 @@ class PaymentMethodsTable extends React.Component {
         )
     }
 }
-export default PaymentMethodsTable
+export default LoginRequired(PaymentMethodsTable, 'none');

@@ -21,7 +21,12 @@ class UsersAdd extends React.Component {
                                         </div>
                                         <br />
                                         <div className='colorear'>
-                                            Correo <br /> <input className='input-group-text' type='eamil' name='nombre_canal'
+                                            Correo <br /> <input className='input-group-text' type='email' name='nombre_canal'
+                                            />
+                                            <br />
+                                        </div>
+                                        <div className='colorear'>
+                                            Telefono <br /> <input className='input-group-text' type='number' name='nombre_canal'
                                             />
                                             <br />
                                         </div>

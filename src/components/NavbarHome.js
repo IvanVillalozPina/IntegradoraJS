@@ -27,7 +27,7 @@ class NavbarAdmin extends React.Component {
                                     </a>
                                 </li>
                                 <div className="BotonesAlFIinal">
-                                <Link to="/" className='tipoletra' >
+                                <Link to="/UsersAdd" className='tipoletra' >
                                     <button type='button' className="btn btn-warning btn-lg">
                                     Registrate
                                     </button>
